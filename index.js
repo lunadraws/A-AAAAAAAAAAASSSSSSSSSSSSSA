@@ -12,7 +12,7 @@ const options = {
   bypass: true,
   log: true,
   paths: [
-    'anime', 'fun', 'moderation', 'setup', 'Économie', 'utility'
+    'anime', 'fun', 'moderation', 'setup', 'économie', 'utility'
   ]
 };
 
