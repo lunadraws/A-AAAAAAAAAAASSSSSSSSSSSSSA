@@ -16,7 +16,7 @@ module.exports = (client, guild) => guilds.findById(guild.id, async (err, doc) =
   .then(owner => owner.tag)
   .catch(() => '<Unfetched Data>');
 
-  const logo = '<a:lovelove:767790365985341461>';
+  const logo = '✔️';
   const members = text.commatize(guild.memberCount);
   const message = `${logo} : **${members}** members, owned by **${owner}**`;
   //====================================================//
