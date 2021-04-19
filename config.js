@@ -95,7 +95,7 @@ const settings = {
   // Client#config#websites
   websites: {
     "invite": "https://discord.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2147483647",
-    "support": "https://discord.gg/Y3rxXzgyhg",
+    "support": "https://discord.gg/vkKwAKjn7G",
     "top.gg": "https://top.gg/bot/688407554904162365",
   }
 };
