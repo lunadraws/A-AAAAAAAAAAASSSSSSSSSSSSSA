@@ -1,42 +1,45 @@
 const { MessageEmbed } = require('discord.js');
 const modifier = require(`${process.cwd()}/util/modifier`);
+const string = require(`${process.cwd()}/util/string`);
 
-module.exports = async (client, member) => {
+module.exports = async ( client, member ) => {
 
   const guildProfile = client.guildProfiles.get(member.guild.id);
 
-  if (!guildProfile.greeter.leaving.isEnabled){
+  if (!guildProfile.greeter.welcome.isEnabled){
     return;
-  } else if (!guildProfile.greeter.leaving.channel) {
+  } else if (!guildProfile.greeter.welcome.channel){
     return;
-  } else if (!member.guild.channels.cache.get(guildProfile.greeter.leaving.channel)){
+  } else if (!member.guild.channels.cache.get(guildProfile.greeter.welcome.channel)){
     return;
   } else {
     // Do nothing..
   };
-
-  const leaving = guildProfile.greeter.leaving;
-  const type = leaving.type === 'msg' && !leaving.message ? 'default' : leaving.type;
+  
+  const welcome = guildProfile.greeter.welcome;
+  const type = welcome.type === 'msg' && !welcome.message ? 'default' : welcome.type;
 
   if (type === 'default'){
-    return client.channels.cache.get(guildProfile.greeter.leaving.channel).send(
+    return client.channels.cache.get(guildProfile.greeter.welcome.channel).send(
       new MessageEmbed()
-      .setColor('#42FF00')
-      .setTitle(`${member.user.tag} has left our server!`)
+      .setColor('#41FF00')
+      .setTitle(`${member.user.tag} has joined our server!`)
       .setThumbnail(member.user.displayAvatarURL({format: 'png', dynamic: true}))
-      .setDescription(`Byebye ${member}!! Sad to see you go!\n\nWe are back to **${member.guild.memberCount}** members!`)
-      .setFooter(`Leaving Member Announcer | ©️${new Date().getFullYear()} Horizongame`)
+      .setDescription(`Hello ${member}, welcome to **${member.guild.name}**!\n\nYou are our **${string.ordinalize(member.guild.memberCount)}** member!`)
+      .setFooter(`Member Greeter | ©️${new Date().getFullYear()} HorizonGame`)
     );
   };
 
-  if (type === 'msg'){
-    const message = await modifier.modify(guildProfile.greeter.leaving.message, member)
-    return client.channels.cache.get(guildProfile.greeter.leaving.channel).send(message);
+  //if message was text, send the text
+   if (type === 'msg'){
+    const message = await modifier.modify(guildProfile.greeter.welcome.message, member);
+    return client.channels.cache.get(guildProfile.greeter.welcome.channel).send(message);
  };
 
- return client.channels.cache.get(guildProfile.greeter.leaving.channel).send(
-   new MessageEmbed(
-     JSON.parse(
-       await modifier.modify(JSON.stringify(guildProfile.greeter.leaving.embed), member)))
- );
+  //if message was embed
+  return client.channels.cache.get(guildProfile.greeter.welcome.channel).send(
+    new MessageEmbed(
+      JSON.parse(
+        await modifier.modify(JSON.stringify(guildProfile.greeter.welcome.embed), member)))
+  );
 };
