@@ -21,7 +21,7 @@ module.exports = async (client, member) => {
   if (type === 'default'){
     return client.channels.cache.get(guildProfile.greeter.leaving.channel).send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#FF0000')
       .setTitle(`${member.user.tag} a quitté notre serveur!`)
       .setThumbnail(member.user.displayAvatarURL({format: 'png', dynamic: true}))
       .setDescription(`Byebye ${member}!! Triste de te voir partir!\n\nNous sommes de retour à **${member.guild.memberCount}** membres!`)
