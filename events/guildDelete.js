@@ -14,7 +14,7 @@ module.exports = async (client, guild) => {
   .then(owner => owner.tag)
   .catch(() => '<Unfetched Data>');
 
-  const logo = '<a:snifffff:767790542465138688>';
+  const logo = '❌';
   const members = text.commatize(guild.memberCount);
   const message = `${logo} : **${members}** members, owned by **${owner}**`;
   //===================================================//
