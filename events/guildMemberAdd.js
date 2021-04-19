@@ -25,7 +25,7 @@ module.exports = async ( client, member ) => {
       .setColor(`#0400FF`)
       .setTitle(`${member.user.tag} a rejoint notre serveur!`)
       .setThumbnail(member.user.displayAvatarURL({format: 'png', dynamic: true}))
-      .setDescription(`Bonjour ${member}, Bienvenue à **${member.guild.name}**!\n\nTu es notre **${string.ordinalize(member.guild.memberCount)}** membre!`)
+      .setDescription(`Bonjour ${member}, Bienvenue sur **${member.guild.name}**!\n\nTu es notre **${string.ordinalize(member.guild.memberCount)}** membre!`)
       .setFooter(`Accueil des membres | ©️${new Date().getFullYear()} HorizonGame`)
     );
   };
