@@ -3,7 +3,7 @@ module.exports = {
     title: '%TITLE Feature message has been successfully reverted to **default**!',
     subtitle: [
       '%STATE les membres seront désormais annoncés par le message d'annonce par défaut de HorizonGame.',
-      `Pour modifier le message, utilisez \`%PREFIX%COMMANDE [options] [additional parameters]\``
+      `Pour modifier le message, utilisez \`%PREFIX%COMMAND [options] [additional parameters]\``
     ].join('\n')
   },
   TYPE_IS_MESSAGE: {
