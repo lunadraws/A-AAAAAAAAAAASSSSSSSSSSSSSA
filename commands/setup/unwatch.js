@@ -6,7 +6,7 @@ module.exports = {
   aliases: ['anischedremove', 'anischedunwatch'],
   guildOnly: true,
   adminOnly: true,
-  group: '**__Configuration__**',
+  group: 'setup',
   description: ['Removes a watched anime from your watchlist'],
   requiresDatabase: true,
   parameters: [ 'Anilist/Mal link' ],
@@ -17,7 +17,7 @@ module.exports = {
   run: (client, message, links) => list.findById(message.guild.id, async (err, doc) => {
 
     if (err){
-      return message.channel.send(`\`❌ [DATABASE_ERR]:\` La base de données a répondu avec une erreur: ${err.name}`);
+      return message.channel.send(`\`❌ [DATABASE_ERR]:\` The database responded with error: ${err.name}`);
     };
 
     // If there is no entry for the current guild, create a new one.
@@ -46,14 +46,14 @@ module.exports = {
       const query = await client.anischedule.fetch(`query($ids: [Int]){ Page(perPage: 25){ media(${key}_in: $ids type: ANIME){ id title { romaji english native userPreferred } status coverImage{ large color } siteUrl nextAiringEpisode{ episode timeUntilAiring } } } }`, { ids })
 
       if (query.errors){
-        return message.channel.send(`\\❌ Impossible de se connecter à AniList. Veuillez réessayer plus tard`);
+        return message.channel.send(`\\❌ Unable to connect to AniList. Please try again later`);
       };
 
       res.push(...query.data.Page.media);
     };
 
     if (!res.length){
-      return message.channel.send(`\\❌ Aucun des liens / identifiants fournis ne correspond à l'anime d'AniList!`);
+      return message.channel.send(`\\❌ None of the provided links/ids matches anime from AniList!`);
     };
 
     const tbd = res.filter(x => doc.data.includes(x.id)).map(x => x.id);
@@ -65,7 +65,7 @@ module.exports = {
       new MessageEmbed()
       .setColor(res.sort((A,B) => B.id - A.id)[0].coverImage.color)
       .setThumbnail(res.sort((A,B) => B.id - A.id)[0].coverImage.large)
-      .setAuthor('Retrait de la liste de surveillance')
+      .setAuthor('Removing from watchlist')
       .setFooter(`Unwatch | \©️${new Date().getFullYear()} HorizonGame`)
       .addFields(res.splice(0,25).sort((A,B) => B.id - A.id).map(entry => {
         const mediatitle = entry.title.romaji || entry.title.english || entry.title.native;
@@ -73,15 +73,15 @@ module.exports = {
         let value = '\u200b';
 
         if (tbd.includes(entry.id)){
-          value = `<a:animatedcheck:758316325025087500> Supprimé avec succès [**${mediatitle}**](${entry.siteUrl})`;
+          value = `<a:animatedcheck:758316325025087500> Successfully removed [**${mediatitle}**](${entry.siteUrl})`;
         } else {
           value = [
-            `\\⚠️ Échec de la suppression [**${mediatitle}**](${entry.siteUrl})`,
-            'Cette entrée n\'est pas sur votre liste!'
+            `\\⚠️ Failed to remove [**${mediatitle}**](${entry.siteUrl})`,
+            'This entry is not on your list!'
           ].join('\n')
         };
         return { name, value };
       }))
-    )).catch(() => message.channel.send(`\`❌ [DATABASE_ERR]:\` Impossible d'enregistrer le document dans la base de données, veuillez réessayer plus tard!`));
+    )).catch(() => message.channel.send(`\`❌ [DATABASE_ERR]:\` Unable to save the document to the database, please try again later!`));
   })
 };
