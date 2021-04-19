@@ -13,7 +13,7 @@ module.exports = {
   cooldown: {
     time: 60000,
   },
-  group: '**__utile__**',
+  group: 'core',
   description: 'View list of anime this server is subscribed to.',
   requiresDatabase: true,
   clientPermissions: [ 'EMBED_LINKS', 'MANAGE_MESSAGES' ],
@@ -25,13 +25,13 @@ module.exports = {
   run: (client, message) => list.findById(message.guild.id, async (err, doc) => {
 
     if (err){
-      return message.channel.send(`\`❌ [DATABASE_ERR]:\` La base de données a répondu avec une erreur: ${err.name}`);
+      return message.channel.send(`\`❌ [DATABASE_ERR]:\` The database responded with error: ${err.name}`);
     } else if (!doc){
       doc = new list({ _id: message.guild.id });
     };
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('RED')
     .setFooter(`Anischedule Watchlist | \©️${new Date().getFullYear()} HorizonGame`)
 
     const anischedch = message.guild.channels.cache.get(doc.channelID);
@@ -40,8 +40,8 @@ module.exports = {
       return message.channel.send(`\\❌ **${message.member.displayName}**, This server's anischedule feature has been disabled.`);
     } else if (!doc.data.length){
       return message.channel.send(
-        embed.setAuthor('Pas d\'abonnement','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-        .setDescription(`**${message.member.displayName}**, ce serveur n'a pas encore d'entrées de planification.`)
+        embed.setAuthor('No Subscription','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
+        .setDescription(`**${message.member.displayName}**, this server has no anischedule entries yet.`)
       );
     } else {
       const entries = [];
@@ -54,13 +54,13 @@ module.exports = {
 
         if (res.errors){
           return message.channel.send(
-            embed.setAuthor('AniList erreur', 'https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-            .setDescription('Erreur reçue de l\'anilist:\n' + errors.map(x => x.message).join('\n'))
+            embed.setAuthor('AniList Error', 'https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
+            .setDescription('Received error from anilist:\n' + errors.map(x => x.message).join('\n'))
           );
         } else if (!entries.length && !res.data.Page.media.length){
           return message.channel.send(
-            embed.setAuthor('Pas d\'abonnement','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-            .setDescription(`**${message.member.displayName}**, ce serveur n'a pas encore d'entrées de planification.`)
+            embed.setAuthor('No Subscription','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
+            .setDescription(`**${message.member.displayName}**, this server has no anischedule entries yet.`)
           );
         } else {
           page = res.data.Page.pageInfo.currentPage + 1;
@@ -78,15 +78,19 @@ module.exports = {
 
       const pages = new Page(descriptions.map((d,i) => {
         return new MessageEmbed()
-        .setColor(message.guild.me.displayHexColor)
+        .setColor('GREY')
         .setDescription(d)
-        .setTitle(`Abonnement Anischedule actuel (${entries.length} entries!)`)
+        .setTitle(`Current Anischedule Subscription (${entries.length} entries!)`)
         .setFooter([
           `Anischedule Watchlist`,
           `Page ${i + 1} of ${descriptions.length}`,
           `\©️${new Date().getFullYear()} HorizonGame`
         ].join('\u2000\u2000•\u2000\u2000'))
-        
+        .addField('Tips', [
+          `- Use [\`${client.prefix}watch\`](https://mai-san.ml/docs/Features/Anischedule#adding-more-to-the-list) to add subscription`,
+          `- Use [\`${client.prefix}unwatch\`](https://mai-san.ml/docs/Features/Anischedule#removing-anime-from-the-list) to remove subscription`,
+          `- Use \`${client.prefix}nextep <anime title>\` to check episode countdown`
+        ].join('\n'))
       }));
 
       const msg = await message.channel.send(pages.firstPage);
