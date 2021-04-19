@@ -75,7 +75,7 @@ module.exports = {
       return message.channel.send(
         new MessageEmbed()
         .setColor(message.guild.me.displayHexColor)
-        .setFooter(`Classement des crédits | \©️${new Date().getFullYear()} Mai`)
+        .setFooter(`Classement des crédits | \©️${new Date().getFullYear()} HorizonGame`)
         .setAuthor(`🏆 ${message.guild.name} Classement des crédits`, message.guild.iconURL({format: 'png', dynamic: true }) || null)
         .addField(`**${members.get(docs[0].id)?.displayName || '<Unknown User>'}** classé le plus élevé avec **${text.commatize(docs[0].wallet + docs[0].bank)} **Crédits!`,
         [
