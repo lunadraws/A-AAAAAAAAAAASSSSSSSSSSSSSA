@@ -15,7 +15,7 @@ module.exports = {
   cooldown: {
     time: 15000,
   },
-  group: '__**Anime**__',
+  group: 'anime',
   description: 'Displays the list of upcoming anime.',
   parameters: [ 'Anime Media Type' ],
   examples: [
@@ -36,10 +36,10 @@ module.exports = {
     };
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
-    .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
-    .setDescription(`\u200B\n Récupération à venir **${type || ' '}** anime de [MyAnimeList](https://myanimelist.net 'MyAnimeList Homepage').\n\u200B`)
-    .setFooter(`Requête d'anime à venir avec MAL\u2000|\u2000\©️${new Date().getFullYear()} HorizonGame`)
+    .setColor('YELLOW')
+    .setThumbnail('https://i.imgur.com/u6ROwvK.gif')
+    .setDescription(`\u200B\n Fetching upcoming **${type || ' '}** anime from <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net 'MyAnimeList Homepage').\n\u200B`)
+    .setFooter(`Upcoming Anime Query with MAL\u2000|\u2000\©️${new Date().getFullYear()} HorizonGame`)
 
     let msg = await message.channel.send(embed);
 
@@ -48,13 +48,13 @@ module.exports = {
     if (!res || res.error){
       res = res ? res : {};
 
-      embed.setColor(message.guild.me.displayHexColor)
-      .setAuthor('Erreur de réponse','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
+      embed.setColor('RED')
+      .setAuthor('Response Error','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
       .setDescription([
         `**${message.member.displayName}**, 'An unexpected error occured!'\n\n`,
         `MyAnimeList responded with error code ${res.status}`
       ].join(''))
-      .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048');
+      .setThumbnail('https://i.imgur.com/qkBQB8V.png');
 
       return await msg.edit(embed).catch(()=>null) || await message.channel.send(embed);
     };
@@ -78,12 +78,12 @@ module.exports = {
     for (const anime of descriptions){
       pages.add(
         new MessageEmbed()
-        .setColor(message.guild.me.displayHexColor)
-        .setAuthor(`Liste d'anime à venir\u2000|\u2000Type: ${type || 'ALL'}`)
+        .setColor('GREY')
+        .setAuthor(`Upcoming Anime List\u2000|\u2000Type: ${type || 'ALL'}`)
         .setDescription(anime.join('\n\n'))
         .setFooter([
-          `Requête d'anime à venir avec MAL`,
-          `Page ${index + 1} sur ${descriptions.length}`,
+          `Upcoming Anime Query with MAL`,
+          `Page ${index + 1} of ${descriptions.length}`,
           `\©️${new Date().getFullYear()} HorizonGame`
         ].join('\u2000|\u2000'))
       );
@@ -98,7 +98,7 @@ module.exports = {
 
     const prev = client.emojis.cache.get('767062237722050561') || '◀';
     const next = client.emojis.cache.get('767062244034084865') || '▶';
-    const terminate = client.emojis.cache.get('769218376542847008') || '❌';
+    const terminate = client.emojis.cache.get('767062250279927818') || '❌';
 
     const filter = (_, user) => user.id === message.author.id;
     const collector = msg.createReactionCollector(filter);
