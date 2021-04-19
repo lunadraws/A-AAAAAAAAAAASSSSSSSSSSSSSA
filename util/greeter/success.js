@@ -2,8 +2,8 @@ module.exports = {
   STATS_IS_DEF: {
     title: '%TITLE Feature message has been successfully reverted to **default**!',
     subtitle: [
-      '%STATE members will now be announced by Mai\'s default announce message.',
-      `To change the message, use \`%PREFIX%COMMAND [options] [additional parameters]\``
+      '%STATE les membres seront désormais annoncés par le message d'annonce par défaut de HorizonGame.',
+      `Pour modifier le message, utilisez \`%PREFIX%COMMANDE [options] [additional parameters]\``
     ].join('\n')
   },
   TYPE_IS_MESSAGE: {
