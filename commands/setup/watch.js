@@ -8,7 +8,7 @@ module.exports = {
   aliases: [ 'anischedadd', 'anischedwatch' ],
   guildOnly: true,
   adminOnly: true,
-  group: '**__Configuration__**',
+  group: 'setup',
   description: 'Adds a new anime to watch for new episodes of. You may provide an <:anilist:767062314121035806>AniList entry link or a <:mal:767062339177676800>MyAnimeList link. Supports multiple ids/links',
   requiresDatabase: true,
   parameters: [ 'Anilist/Mal link' ],
@@ -19,7 +19,7 @@ module.exports = {
   run: (client, message, links) => list.findById(message.guild.id, async (err, doc) => {
 
     if (err){
-      return message.channel.send(`\`❌ [DATABASE_ERR]:\` La base de données a répondu avec une erreur: ${err.name}`);
+      return message.channel.send(`\`❌ [DATABASE_ERR]:\` The database responded with error: ${err.name}`);
     };
 
     // If there is no entry for the current guild, create a new one.
@@ -48,14 +48,14 @@ module.exports = {
       const query = await client.anischedule.fetch(`query($ids: [Int]){ Page(perPage: 25){ media(${key}_in: $ids type: ANIME){ id title { romaji english native userPreferred } status coverImage{ large color } siteUrl nextAiringEpisode{ episode timeUntilAiring } } } }`, { ids })
 
       if (query.errors){
-        return message.channel.send(`\\❌ Impossible de se connecter à AniList. Veuillez réessayer plus tard`);
+        return message.channel.send(`\\❌ Unable to connect to AniList. Please try again later`);
       };
 
       res.push(...query.data.Page.media);
     };
 
     if (!res.length){
-      return message.channel.send(`\\❌ Aucun des liens / identifiants fournis ne correspond à l'anime d'AniList!`);
+      return message.channel.send(`\\❌ None of the provided links/ids matches anime from AniList!`);
     };
 
     const valid_ids = res.filter(x => ['HIATUS','RELEASING','NOT_YET_RELEASED'].includes(x.status)).map(x => x.id);
@@ -67,7 +67,7 @@ module.exports = {
       new MessageEmbed()
       .setColor(res.sort((A,B) => B.id - A.id)[0].coverImage.color)
       .setThumbnail(res.sort((A,B) => B.id - A.id)[0].coverImage.large)
-      .setAuthor('Ajout à la liste de surveillance')
+      .setAuthor('Adding to watchlist')
       .setFooter(`Watch | \©️${new Date().getFullYear()} HorizonGame`)
       .addFields(res.splice(0,25).sort((A,B) => B.id - A.id).map(entry => {
         const filter = ['HIATUS','RELEASING','NOT_YET_RELEASED'].includes(entry.status)
@@ -77,12 +77,12 @@ module.exports = {
         let reason;
 
         if (entry.status === 'FINISHED'){
-          reason = 'Cet anime a déjà fini de diffuser.'
+          reason = 'This anime has already finished airing.'
         } else if (entry.status === 'CANCELLED'){
-          reason = 'Cet anime a déjà été annulé.'
+          reason = 'This anime was already cancelled.'
         } else if (entry.status === 'HIATUS'){
           reason = [
-            'Cet anime est actuellement en pause.',
+            'This anime is currently on hiatus.',
             [
               `Its **${text.ordinalize(nextep).replace('0th','') || 'next'}** episode`,
               untilnextep
@@ -93,7 +93,7 @@ module.exports = {
           ].join('\n')
         }else if (existing.includes(entry.id)){
           reason = [
-            'Cet anime est déjà sur votre liste de surveillance!',
+            'This anime is already on your watchlist!',
             [
               `Its **${text.ordinalize(nextep).replace('0th','') || 'next'}** episode`,
               untilnextep
