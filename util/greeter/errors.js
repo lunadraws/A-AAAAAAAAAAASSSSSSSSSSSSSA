@@ -1,6 +1,6 @@
 module.exports = {
   NO_OPTION_PARAM: {
-    title: 'Veuillez inclure le paramètre d\'option , setgoodbyemsg default , setgoodbyemsg embed=true , setgoodbyemsg embed=set -author=image:[ <url> ]'
+    title: 'Veuillez inclure le paramètre d\'option , default , embed=true , embed=set -author=image:[ <url> ]'
   },
   NO_TEXT_MESSAGE: {
     title: 'Unable to change the %TYPE message to **text mode**!',
