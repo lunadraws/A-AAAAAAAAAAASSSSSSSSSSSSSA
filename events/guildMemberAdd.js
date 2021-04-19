@@ -22,7 +22,7 @@ module.exports = async ( client, member ) => {
   if (type === 'default'){
     return client.channels.cache.get(guildProfile.greeter.welcome.channel).send(
       new MessageEmbed()
-      .setColor(`#0400FF`)
+      .setColor(`#42FF00`)
       .setTitle(`${member.user.tag} a rejoint notre serveur!`)
       .setThumbnail(member.user.displayAvatarURL({format: 'png', dynamic: true}))
       .setDescription(`Bonjour ${member}, Bienvenue sur **${member.guild.name}**!\n\nTu es notre **${string.ordinalize(member.guild.memberCount)}** membre!`)
