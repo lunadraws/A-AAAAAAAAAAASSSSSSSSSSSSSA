@@ -11,10 +11,10 @@ module.exports = {
   aliases: [ 'nextairing', 'nextair', 'nextep', 'nextepisode' ],
   cooldown: {
     time: 10000,
-    message: '!'
+    message: 'You are going too fast! Please slow down to avoid being rate-limited!'
   },
   clientPermissions: [ 'EMBED_LINKS' ],
-  group: '__**Anime**__',
+  group: 'anime',
   description: 'Shows the remaining time for the next episode of given anime. Returns this day\'s schedule, if no anime is specified',
   parameters: [ 'Search Query' ],
   examples: [
@@ -22,7 +22,7 @@ module.exports = {
     'nextair boruto',
     'nextairing black clover',
     'nextep attack on titan',
-    'nextepisode fire force'
+    'nextepisode tensura'
   ],
   run: async ( client, message, args ) => {
 
@@ -33,27 +33,27 @@ module.exports = {
     const res = await client.anischedule.fetch(query, variables);
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
-    .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
-    .setFooter(`Requête Airdate avec AL | \©️${new Date().getFullYear()} HorizonGame`);
+    .setColor('RED')
+    .setThumbnail('https://i.imgur.com/qkBQB8V.png')
+    .setFooter(`Airdate Query with AL | \©️${new Date().getFullYear()} HorizonGame`);
 
     if (res.errors && res.errors.some(e => e.message !== 'Not Found.')){
       return message.channel.send(
-        embed.setAuthor('Erreur de réponse','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
+        embed.setAuthor('Response Error','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
         .setDescription([
-          `**${message.member.displayName}**, Une erreur inattendue s'est produite!\n\n`,
+          `**${message.member.displayName}**, An unexpected error has occured!\n\n`,
           `${res.errors.map(({ message }) => '• ' + message).join('\n')}`,
-          `S'il vous plait, réessayez dans quelques minutes. Cela est généralement dû à un temps d'arrêt du serveur.`
+          `Please try again in a few minutes. This is usually caused by a server downtime.`
        ].join(''))
      );
     };
 
     if (res.errors && res.errors.some(e => e.message === 'Not Found.')){
       return message.channel.send(
-        embed.setAuthor('None Found','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
+        embed.setAuthor('None Found','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
         .setDescription([
-           `**${message.member.displayName}**, Cet anime a peut-être déjà ** Diffusion terminée **, `,
-           `avoir ** la prochaine Airdate inconnue **, ou cet anime n'a peut-être ** jamais existé ** du tout!`
+           `**${message.member.displayName}**, That anime may have already **Finished Airing**, `,
+           `have **unknown next Airdate**, or that anime may have **never existed** at all!`
          ].join(''))
       );
     };
@@ -62,10 +62,10 @@ module.exports = {
 
     if (!now){
       return message.channel.send(
-        embed.setAuthor('None Found','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
+        embed.setAuthor('None Found','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
         .setDescription([
-           `**${message.member.displayName}**, Cet anime a peut-être déjà ** Diffusion terminée **, `,
-           `avoir ** la prochaine Airdate inconnue **, ou cet anime n'a peut-être ** jamais existé ** du tout!`
+           `**${message.member.displayName}**, That anime may have already **Finished Airing**, `,
+           `have **unknown next Airdate**, or that anime may have **never existed** at all!`
          ].join(''))
       );
     } else if (variables.status){
@@ -78,12 +78,12 @@ module.exports = {
           `${now.title.native || '*'} \n`,
           `${now.title.romaji || '*'} \n\n`,
           now.nextAiringEpisode ? [
-            `Épisode **${now.episodes === now.nextAiringEpisode.episode ? `${now.nextAiringEpisode.episode} (Final Episode)` : now.nextAiringEpisode.episode}**`,
-            `sur [${now.title.english || now.title.romaji || now.title.native}](${now.siteUrl})`,
-            `sera diffusé dans environ **${duration(now.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**\n\n`,
+            `Episode **${now.episodes === now.nextAiringEpisode.episode ? `${now.nextAiringEpisode.episode} (Final Episode)` : now.nextAiringEpisode.episode}**`,
+            `of [${now.title.english || now.title.romaji || now.title.native}](${now.siteUrl})`,
+            `will air in approximately **${duration(now.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**\n\n`,
           ].join(' ') : [
-            `Date de diffusion de l'épisode suivant pour [${now.title.english || now.title.romaji || now.title.native}](${now.siteUrl})`,
-            `est actuellement inconnu.`
+            `Next episode airdate for [${now.title.english || now.title.romaji || now.title.native}](${now.siteUrl})`,
+            `is currently unknown.`
           ].join(' '),
           `${now.id}\u2000|\u2000${now.studios.edges.map(x => `[${x.node.name}](${x.node.siteUrl})`).join('\u2000|\u2000')}`
         ].join(''))
@@ -92,7 +92,7 @@ module.exports = {
       return message.channel.send(
         embed.setColor(now.coverImage.color || next.coverImage.color || later.coverImage.color )
         .setThumbnail(now.coverImage.large)
-        .setAuthor(`Airs suivant\u2000|\u2000${now.title.english || now.title.romaji || now.title.native}.`, null, now.siteUrl)
+        .setAuthor(`Airs next\u2000|\u2000${now.title.english || now.title.romaji || now.title.native}.`, null, now.siteUrl)
         .setDescription([
           [
             `[**${now.title.english || now.title.romaji || now.title.native}**](${now.siteUrl})`,
@@ -100,13 +100,13 @@ module.exports = {
             `\u2000\u2000*${now.title.romaji ? now.title.native : '~'}*`
           ].join('\n'),
           now.nextAiringEpisode.timeUntilAiring ? [
-            `Épisode **${now.episodes === now.nextAiringEpisode.episode ? `${now.nextAiringEpisode.episode} (Final Episode)` : now.nextAiringEpisode.episode}**`,
-            `airs dans **${duration(now.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.\n\u200b`
-          ].join(' ') : 'Le prochain épisode est actuellement **inconnu**.\n\u200b'
+            `Episode **${now.episodes === now.nextAiringEpisode.episode ? `${now.nextAiringEpisode.episode} (Final Episode)` : now.nextAiringEpisode.episode}**`,
+            `airs in **${duration(now.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.\n\u200b`
+          ].join(' ') : 'Next episode is currently **Unknown**.\n\u200b'
         ].join('\n'))
         .addFields([
           {
-            name: 'Diffusion plus tard',
+            name: 'Airs Later',
             value: next ? [
               [
                 `[**${next.title.english || next.title.romaji || next.title.native}**](${next.siteUrl})`,
@@ -114,12 +114,12 @@ module.exports = {
                 `\u2000\u2000*${next.title.romaji ? next.title.native : '~'}*`
               ].join('\n'),
               next.nextAiringEpisode.timeUntilAiring ? [
-                `Épisode **${next.episodes === next.nextAiringEpisode.episode ? `${next.nextAiringEpisode.episode} (Final Episode)` : next.nextAiringEpisode.episode}**`,
-                `airs dans **${duration(next.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.\n\u200b`
-              ].join(' ') : 'Le prochain épisode est actuellement **inconnu**.\n\u200b'
-            ].join('\n') : 'Aucun anime n\'a été trouvé les 7 prochains jours.\n\u200b'
+                `Episode **${next.episodes === next.nextAiringEpisode.episode ? `${next.nextAiringEpisode.episode} (Final Episode)` : next.nextAiringEpisode.episode}**`,
+                `airs in **${duration(next.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.\n\u200b`
+              ].join(' ') : 'Next episode is currently **Unknown**.\n\u200b'
+            ].join('\n') : 'No Anime were found on the next 7 days.\n\u200b'
           },{
-            name: 'Diffusion plus tard',
+            name: 'Airs Later',
             value: later ? [
               [
                 `[**${later.title.english || later.title.romaji || later.title.native}**](${later.siteUrl})`,
@@ -127,10 +127,10 @@ module.exports = {
                 `\u2000\u2000*${later.title.romaji ? later.title.native : '~'}*`
               ].join('\n'),
               later.nextAiringEpisode.timeUntilAiring ? [
-                `Épisode **${later.episodes === later.nextAiringEpisode.episode ? `${later.nextAiringEpisode.episode} (Final Episode)` : later.nextAiringEpisode.episode}**`,
-                `airs dans **${duration(later.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.`
-              ].join(' ') : 'Le prochain épisode est actuellement **inconnu**.'
-            ].join('\n') : 'Aucun anime n\'a été trouvé les 7 jours suivants.'
+                `Episode **${later.episodes === later.nextAiringEpisode.episode ? `${later.nextAiringEpisode.episode} (Final Episode)` : later.nextAiringEpisode.episode}**`,
+                `airs in **${duration(later.nextAiringEpisode.timeUntilAiring, 'seconds').format('D [days] H [hours and] m [minutes]')}**.`
+              ].join(' ') : 'Next episode is currently **Unknown**.'
+            ].join('\n') : 'No Anime were found on the next 7 days.'
           }
         ])
       );
