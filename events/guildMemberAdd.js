@@ -23,10 +23,10 @@ module.exports = async ( client, member ) => {
     return client.channels.cache.get(guildProfile.greeter.welcome.channel).send(
       new MessageEmbed()
       .setColor('#41FF00')
-      .setTitle(`${member.user.tag} has joined our server!`)
+      .setTitle(`${member.user.tag} a rejoint notre serveur!`)
       .setThumbnail(member.user.displayAvatarURL({format: 'png', dynamic: true}))
-      .setDescription(`Hello ${member}, welcome to **${member.guild.name}**!\n\nYou are our **${string.ordinalize(member.guild.memberCount)}** member!`)
-      .setFooter(`Member Greeter | ©️${new Date().getFullYear()} HorizonGame`)
+      .setDescription(`Salut ${member}, Bienvenue sur **${member.guild.name}**!\n\n Tu es notre **${string.ordinalize(member.guild.memberCount)}** membres!`)
+      .setFooter(`Accueil Membre | ©️${new Date().getFullYear()} HorizonGame`)
     );
   };
 
