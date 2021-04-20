@@ -3,7 +3,7 @@ const profile = require('../../models/Profile');
 
 module.exports = {
   name: 'find',
-  aliases: [ 'search' ],
+  aliases: [ 'find' ],
   guildOnly: true,
   group: '**__Économie__**',
   description: 'You can find hidden credits on your surrounding if you try!',
