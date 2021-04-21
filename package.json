@@ -9,7 +9,7 @@
     "build": "node build.js"
   },
   "engines": {
-    "node": ">=14"
+    "node": "15"
   },
   "repository": {
     "type": "git",
