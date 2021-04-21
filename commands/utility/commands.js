@@ -45,7 +45,7 @@ module.exports = {
        )
        .addField(
         '__**configuration**__',
-        "`disableanisched`, `goodbyetoggle`, `setanischedch`, `setgoodbyech`, `setgoodbyemsg`, `setmute`, `setprefix`, `setsuggestch`, `setwelcomech`, `setwelcomemsg`, `togglevotenotif`, `unwatch`, `userxpreset`, `watch`, `welcometoggle`, `xpenable`, `xpexcempt`, `xpreset`, `xptoggle`, `addbotchat`, `adddj`, `removedj`, `removebotchat`"
+        "`disableanisched`, `goodbyetoggle`, `setanischedch`, `setgoodbyech`, `setgoodbyemsg`, `setmute`, `setsuggestch`, `setwelcomech`, `setwelcomemsg`, `togglevotenotif`, `unwatch`, `userxpreset`, `watch`, `welcometoggle`, `xpenable`, `xpexcempt`, `xpreset`, `xptoggle`, `addbotchat`, `adddj`, `removedj`, `removebotchat`"
        )
        .addField(
         '__**amusant**__',
