@@ -53,11 +53,11 @@ module.exports = {
        )
        .addField(
         '__**utile**__',
-        "`sleeptimer`, `embed`, `feedback`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `dj`, `invite`, `ping`, `uptime`"
+        "`embed`, `feedback`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
        )
        .addField(
         '__**musique**__',
-        "`addrelated`, `autoplay`, `playlist`, `clearqueue`, `custom`, `forward`, `grab`, `join`, `jump`, `loop`, `lyrics`, `moveme`, `mycustom`, `nowplaying`, `pause`, `play`, `playsc`, `playskip`, `radio`, `removetrack`, `replay`, `resume`, `rewind`, `search`, `searchrelated`, `searchsc`, `seek`, `shuffle`, `skip`, `status`, `stop`, `volume`"
+        "`filter`, `leave`, `loop`, `lyrics`, `move`, `nowplaying`, `pause`, `play`, `queue`, `remove`, `resume`, `search`, `shuffle`, `skipto`, `stop`, `volume`"
        )
        
        
