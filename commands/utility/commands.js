@@ -30,10 +30,10 @@ module.exports = {
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
       .addField(
           '**__couleur__**',
-          "en maintenance")
+           "`color`, `colors`, `createcolor`, `createdefaultcolors`, `randomcolor`")
        .addField(
         '__**modération**__',
-        "`addemoji`, `addroles`, `ban`, `clear`, `hackban`, `kick`, `lockdown`, `mute`, `nuke`, `resetchannel`, `resetroles`, `reponse`, `softban`, `softlockdown`, `softmute`, `unban`, `unmute`"
+        "`setnickname`, `slowmode`, `addemoji`, `addroles`, `ban`, `clear`, `hackban`, `kick`, `lockdown`, `mute`, `nuke`, `resetchannel`, `resetroles`, `reponse`, `softban`, `softlockdown`, `softmute`, `unban`, `unmute`"
        )
        .addField(
         '__**anime**__',
@@ -49,11 +49,11 @@ module.exports = {
        )
        .addField(
         '__**amusant**__',
-        "`advice`, `baka`, `birdfacts`, `blush`, `catfacts`, `comment`, `cry`, `dance`, `disgust`, `dogfacts`, `feed`, `fortune`, `happy`, `holdhands`, `horoscope`, `hug`, `invert`, `joke`, `kill`, `kiss`, `lick`, `meme`, `midfing`, `pandafacts`, `pat`, `poke`, `pokemon`, `rate`, `respect`, `reverse`, `roll`, `slap`, `sleep`, `smile`, `smug`, `suicide`, `tickle`, `triggered`, `wave`, `wink`"
+        "`youtube`, `yesno`, `trumptweet`, `trivia`, `translate`, `topics`, `thouart`, `solotrivia`, `shibe`, `say`, `rps`, `minesweeper`, `math`, `geometrydashsay`, `fox`, `emojify`, `duck`, `dog`, `corona`, `coinflip`, `cat`, `bird`, `8ball`, `advice`, `baka`, `birdfacts`, `blush`, `catfacts`, `comment`, `cry`, `dance`, `disgust`, `dogfacts`, `feed`, `fortune`, `happy`, `holdhands`, `horoscope`, `hug`, `invert`, `joke`, `kill`, `kiss`, `lick`, `meme`, `midfing`, `pandafacts`, `pat`, `poke`, `pokemon`, `rate`, `respect`, `reverse`, `roll`, `slap`, `sleep`, `smile`, `smug`, `suicide`, `tickle`, `triggered`, `wave`, `wink`"
        )
        .addField(
         '__**utile**__',
-        "`embed`, `feedback`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
+        "`userinfo`, `stats`, `serverinfo`, `servericon`, `serverboost`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `feedback`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
        )
        .addField(
         '__**musique**__',
