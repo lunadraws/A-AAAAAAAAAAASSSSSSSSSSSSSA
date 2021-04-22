@@ -62,7 +62,7 @@ const settings = {
 
   // set the default prefix, if non-string data-type is provided, will resolve
   // to the prefix 'm!'
-  prefix: 'h.',
+  prefix: '>',
 
   // allowed features for the bot, you can add/remove features you want.
   allowedFeatures: [ 'ANISCHEDULE', 'CHATBOT', 'EXPERIENCE_POINTS'],
