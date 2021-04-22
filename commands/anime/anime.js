@@ -45,12 +45,12 @@ module.exports = {
         '\u2000•\u2000Essayez les noms alternatifs (par exemple anglais, natif, romanisé)',
         '\u2000•\u2000Incluez le numéro de saison (le cas échéant)',
         '\u2000•\u2000Incluez le type (par exemple OVA, ONA, TV Shorts).'
-      ]
+      ])
     } else if (data === 'TIMEOUT'){
       return message.channel.send([
         `\\<a:a_ERROR:828230829687046155> **${message.author.tag}**, MyAnimeList a mis plus de temps à répondre.`,
         'Veuillez réessayer plus tard, cela peut être dû à un temps d\'arrêt du serveur.'
-      ].join('\n')).then(() => message.channel.stopTyping());
+      ]
     };
 
     message.channel.stopTyping();
