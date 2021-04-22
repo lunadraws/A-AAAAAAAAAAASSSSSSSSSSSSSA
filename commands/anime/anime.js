@@ -28,7 +28,7 @@ module.exports = {
     const query = args.join(' ') || 'sao';
 
     // Indicate that the bot is doing something in the background
-    message.channel.startTyping();
+    
 
     const data = await new Promise((resolve,reject) => {
       setTimeout(() => reject('TIMEOUT'), 10000);
