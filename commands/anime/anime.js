@@ -50,10 +50,10 @@ module.exports = {
       return message.channel.send([
         `\\<a:a_ERROR:828230829687046155> **${message.author.tag}**, MyAnimeList a mis plus de temps à répondre.`,
         'Veuillez réessayer plus tard, cela peut être dû à un temps d\'arrêt du serveur.'
-      ]
+      ])
     };
 
-    message.channel.stopTyping();
+   
 
     const isHentai = data.genres.some(x => x === 'Hentai');
     const nsfwch = message.guild.channels.cache.filter(x => x.nsfw).map(x => x.toString());
