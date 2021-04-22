@@ -1,18 +1,7 @@
 const settings = {
   // pass in any client configuration you want for the bot.
   // more client options can be found at
-  // https://discord.js.org/#/docs/main/stable/typedef/ClientOptions
-  client: {
-    presence: {
-      activity: {
-        name: 'faite h.help pour voir mes commands',
-        type: 'COMPETING'
-      }
-    },
-    // Sweep messages every 12 hours
-    messageCacheLifetime: 43200,
-    messageSweepInterval: 43200
-  },
+  // https://discord.js.org/#/docs/main/stable/typedef/ClientOption
 
   // Websites to monitor, accessible via client#pings
   // function must be instances of promise.
