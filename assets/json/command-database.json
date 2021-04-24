@@ -16,6 +16,22 @@
     ]
   },
   {
+    "name": "color",
+    "aliases": [],
+    "clientPermissions": [
+      "EMBED_LINKS",
+      "ADD_REACTIONS"
+    ],
+    "group": "couleur",
+    "description": "Rougit à un utilisateur.",
+    "parameters": [
+      "User Mention"
+    ],
+    "examples": [
+      "blush @user"
+    ]
+  },
+  {
     "name": "blush",
     "aliases": [],
     "clientPermissions": [
@@ -23,7 +39,7 @@
       "ADD_REACTIONS"
     ],
     "group": "fun",
-    "description": "Blushes at a user.",
+    "description": "Rougit à un utilisateur.",
     "parameters": [
       "User Mention"
     ],
@@ -292,7 +308,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `smug` to the chat. Usually interpreted as 「 The user who used this command smugs at the previous chat 」. Use to indicate that you sense the ulterior motive the previous user sent in chat.",
     "parameters": [],
     "examples": [
@@ -309,7 +325,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `suicide` to the chat. Usually interpreted as 「 The user who used this command wants to commit suicide (in a jokingly manner) 」. Use to indicate that you are stunned by the previous user's chats that it makes you want to kys. This is a roleplay command and is meant to be used as a joke, however, this will be limited to a nsfw channel due to sensitive nature of this command. Context should not include real crimes.",
     "parameters": [],
     "examples": [
@@ -324,7 +340,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `tickle` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been tickled 」. Use to indicate that you tickled the mentioned user (context may vary).",
     "parameters": [
       "User Mention"
@@ -340,7 +356,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Wave at someone.",
     "parameters": [
       "User Mention"
@@ -356,7 +372,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Wink at a user.",
     "parameters": [
       "User Mention"
