@@ -7,7 +7,7 @@
       "ADD_REACTIONS"
     ],
     "group": "fun",
-    "description": "Sends a roleplay gif `baka` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is an idiot (in a kawaii-context) 」.",
+    "description": "Envoie un gif de jeu de rôle `baka` dans le tchat, dirigé vers l'utilisateur mentionné, s'il y en a. Habituellement interprété comme 「L'utilisateur auquel cette commande est dirigée est un idiot (dans un contexte kawaii)」.",
     "parameters": [
       "User Mention"
     ],
