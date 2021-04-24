@@ -9,7 +9,7 @@
     "group": "fun",
     "description": "Envoie un gif de jeu de rôle `baka` dans le tchat, dirigé vers l'utilisateur mentionné, s'il y en a. Habituellement interprété comme 「L'utilisateur auquel cette commande est dirigée est un idiot (dans un contexte kawaii)」.",
     "parameters": [
-      "Mention de l'utilisateur"
+      "User Mention"
     ],
     "exemple": [
       "baka @user"
@@ -25,7 +25,7 @@
     "group": "fun",
     "description": "Rougit à un utilisateur.",
     "parameters": [
-      "Mention de l'utilisateur"
+      "User Mention"
     ],
     "exemple": [
       "blush @user"
