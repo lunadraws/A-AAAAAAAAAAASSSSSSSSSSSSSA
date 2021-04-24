@@ -7,11 +7,11 @@
       "ADD_REACTIONS"
     ],
     "group": "fun",
-    "description": "Sends a roleplay gif `baka` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is an idiot (in a kawaii-context) 」.",
+    "description": "Envoie un gif de jeu de rôle `baka` dans le tchat, dirigé vers l'utilisateur mentionné, s'il y en a. Habituellement interprété comme 「L'utilisateur auquel cette commande est dirigée est un idiot (dans un contexte kawaii)」.",
     "parameters": [
-      "User Mention"
+      "Mention de l'utilisateur"
     ],
-    "examples": [
+    "exemple": [
       "baka @user"
     ]
   },
@@ -23,11 +23,11 @@
       "ADD_REACTIONS"
     ],
     "group": "fun",
-    "description": "Blushes at a user.",
+    "description": "Rougit à un utilisateur.",
     "parameters": [
-      "User Mention"
+      "Mention de l'utilisateur"
     ],
-    "examples": [
+    "exemple": [
       "blush @user"
     ]
   },
@@ -38,10 +38,10 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
-    "description": "Sends a roleplay gif `cry` to the chat. Usually interpreted as 「 The user who used this commnd is crying 」. Use to indicate that you are currently crying. May be used in a similar context to the emoji 😢.",
+    "group": "fun",
+    "description": "Envoie un gif de jeu de rôle `cri` dans le tchat. Habituellement interprété comme «L'utilisateur qui a utilisé ce commnd pleure». Utilisez pour indiquer que vous pleurez actuellement. Peut être utilisé dans un contexte similaire à celui de l'emoji 😢.",
     "parameters": [],
-    "examples": [
+    "exemple": [
       "cry"
     ]
   },
@@ -52,8 +52,8 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
-    "description": "Sends a roleplay gif `dance` to the chat. Usually interpreted as 「 The user who used this commnd is dancing (in joy) 」. Use to indicate that you are currently dancing (context may vary).",
+    "group": "fun",
+    "description": "Envoie un gif de jeu de rôle `dance` dans le tchat. Habituellement interprété comme 「L'utilisateur qui a utilisé ce commnd danse (dans la joie)」. Utilisez pour indiquer que vous dansez actuellement (le contexte peut varier).",
     "parameters": [],
     "examples": [
       "dance"
