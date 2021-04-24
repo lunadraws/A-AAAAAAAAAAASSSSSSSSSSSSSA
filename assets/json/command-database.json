@@ -6,7 +6,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `baka` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is an idiot (in a kawaii-context) 」.",
     "parameters": [
       "User Mention"
@@ -22,7 +22,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Blushes at a user.",
     "parameters": [
       "User Mention"
