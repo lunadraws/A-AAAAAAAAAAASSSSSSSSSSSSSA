@@ -6,7 +6,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `baka` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is an idiot (in a kawaii-context) 」.",
     "parameters": [
       "User Mention"
@@ -22,7 +22,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Blushes at a user.",
     "parameters": [
       "User Mention"
@@ -38,7 +38,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `cry` to the chat. Usually interpreted as 「 The user who used this commnd is crying 」. Use to indicate that you are currently crying. May be used in a similar context to the emoji 😢.",
     "parameters": [],
     "examples": [
@@ -52,7 +52,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `dance` to the chat. Usually interpreted as 「 The user who used this commnd is dancing (in joy) 」. Use to indicate that you are currently dancing (context may vary).",
     "parameters": [],
     "examples": [
@@ -66,7 +66,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `disgust` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is digusting (Mazui!!, Kimoi!!) 」. Use to indicate that you are disgusted by their (ideas on their) previous chats. May be used in a similar context to the emoji 🤮.",
     "parameters": [
       "User Mention"
@@ -82,7 +82,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `feed` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been fed 」. Use to indicate that you are / wanted to feed the user.",
     "parameters": [
       "User Mention"
@@ -98,7 +98,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `happy` to the chat. Usually interpreted as 「 The user who used this command is happy (shiawase da!!) 」. Use to indicate that you are currently happy (context may vary). May be used in a similar context to the emoji 😃.",
     "parameters": [],
     "examples": [
@@ -112,7 +112,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Hold hands of someone special.",
     "parameters": [
       "User Mention"
@@ -128,7 +128,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `hug` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been hugged 」. Use to indicate that you are / wanted to hug the mentioned user (context may vary). May be used in a similar context to the emoji 🤗.",
     "parameters": [
       "User Mention"
@@ -145,7 +145,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `kill` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user who used this command wants to kill the mentioned user 」. Use to indicate that you are / wanted to kill the mentioned user (context may vary). This is a roleplay command and is meant to be used as a joke, however, this will be limited to a nsfw channel due to sensitive nature of this command. Context should not include real crimes.",
     "parameters": [
       "User Mention"
@@ -161,7 +161,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `kiss` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been kissed 」. Use to indicate that you are / wanted to kiss the mentioned user (context may vary). May be used in a similar context to the emoji 😘.",
     "parameters": [
       "User Mention"
@@ -177,7 +177,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `lick` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been licked (lero lero lero lero lero) 」. Use to indicate that you are / wanted to lick the mentioned user (context may vary).",
     "parameters": [
       "User Mention"
@@ -193,7 +193,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "nsfw": true,
     "description": "Sends a roleplay gif `midfing` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user who used this command wants the mentioned user to **** off 」. Use to indicate that you are annoyed by the user (context may vary). This is a roleplay command and is meant to be used as a joke, however, this will be limited to a nsfw channel due to sensitive nature of this command.",
     "parameters": [
@@ -212,7 +212,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `pat` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user gave a headpat to the mentioned user 」. Use to indicate that you are / wanted to headpat the mentioned user (context may vary).",
     "parameters": [
       "User Mention"
@@ -228,7 +228,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `poke` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The mentioned user ignores you, so you poke them 」. Use to indicate that you are in need of attention from the mentioned user (context may vary).",
     "parameters": [
       "User Mention"
@@ -244,7 +244,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Sends a roleplay gif `slap` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to has been slapped 」. Use to indicate that you are / wanted to slap the mentioned user (context may vary).",
     "parameters": [
       "User Mention"
@@ -260,7 +260,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Puts a user to sleep..",
     "parameters": [
       "User Mention"
@@ -276,7 +276,7 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "action",
+    "group": "fun",
     "description": "Smiles at a user.",
     "parameters": [
       "User Mention"
