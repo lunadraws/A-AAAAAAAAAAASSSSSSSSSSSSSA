@@ -6,10 +6,14 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "fun",
-    
+    "group": "action",
+    "description": "Sends a roleplay gif `baka` to the chat, directed towards the mentioned user, if there is any. Usually interpreted as 「 The user whom this command is directed to is an idiot (in a kawaii-context) 」.",
+    "parameters": [
+      "User Mention"
+    ],
+    "examples": [
+      "baka @user"
     ]
-   
   },
   {
     "name": "blush",
@@ -18,12 +22,12 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "fun",
-    "description": "Rougit à un utilisateur.",
+    "group": "action",
+    "description": "Blushes at a user.",
     "parameters": [
       "User Mention"
     ],
-    "exemple": [
+    "examples": [
       "blush @user"
     ]
   },
@@ -34,10 +38,10 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "fun",
-    "description": "Envoie un gif de jeu de rôle `cri` dans le tchat. Habituellement interprété comme «L'utilisateur qui a utilisé ce commnd pleure». Utilisez pour indiquer que vous pleurez actuellement. Peut être utilisé dans un contexte similaire à celui de l'emoji 😢.",
+    "group": "action",
+    "description": "Sends a roleplay gif `cry` to the chat. Usually interpreted as 「 The user who used this commnd is crying 」. Use to indicate that you are currently crying. May be used in a similar context to the emoji 😢.",
     "parameters": [],
-    "exemple": [
+    "examples": [
       "cry"
     ]
   },
@@ -48,8 +52,8 @@
       "EMBED_LINKS",
       "ADD_REACTIONS"
     ],
-    "group": "fun",
-    "description": "Envoie un gif de jeu de rôle `dance` dans le tchat. Habituellement interprété comme 「L'utilisateur qui a utilisé ce commnd danse (dans la joie)」. Utilisez pour indiquer que vous dansez actuellement (le contexte peut varier).",
+    "group": "action",
+    "description": "Sends a roleplay gif `dance` to the chat. Usually interpreted as 「 The user who used this commnd is dancing (in joy) 」. Use to indicate that you are currently dancing (context may vary).",
     "parameters": [],
     "examples": [
       "dance"
@@ -382,10 +386,10 @@
     ],
     "examples": [
       "alprofile",
-      "al-of flox",
-      "alof flox",
-      "alstat flox",
-      "aluser flox"
+      "al-of sakurajimai",
+      "alof sakurajimai",
+      "alstat sakurajimai",
+      "aluser sakurajimai"
     ]
   },
   {
@@ -403,7 +407,7 @@
       "EMBED_LINKS"
     ],
     "group": "anime",
-    "description": "Searches for a specific anime in <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net \"Homepage\"), or shows horizongame's anime series information if no query is provided.",
+    "description": "Searches for a specific anime in <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net \"Homepage\"), or shows Mai's anime series information if no query is provided.",
     "parameters": [
       "Search Query"
     ],
@@ -496,14 +500,14 @@
       "EMBED_LINKS"
     ],
     "group": "anime",
-    "description": "Searches for a character in <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net \"Homepage\"), or horizonGame's character information if no query is provided.",
+    "description": "Searches for a character in <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net \"Homepage\"), or Mai's character information if no query is provided.",
     "parameters": [
       "Search Query"
     ],
     "examples": [
       "character",
-      "anichar asuna",
-      "anichar Sakuta",
+      "anichar Mai",
+      "anichar Sakuta Azusagawa",
       "char Rio Futaba",
       "c Kaede Azusagawa"
     ]
@@ -576,11 +580,11 @@
       "Myanimelist Username"
     ],
     "examples": [
-      "malprofile flox",
-      "mal-of flox",
-      "malof flox",
-      "malstat flox",
-      "maluser flox"
+      "malprofile sakurajimai-san",
+      "mal-of sakurajimai-san",
+      "malof sakurajimai-san",
+      "malstat sakurajimai-san",
+      "maluser sakurajimai-san"
     ]
   },
   {
@@ -735,7 +739,7 @@
       "EMBED_LINKS"
     ],
     "group": "anime",
-    "description": "Search for seiyuu's on your favorite anime characters, or horizonGame's seiyuu if no query is provided!",
+    "description": "Search for seiyuu's on your favorite anime characters, or Mai's seiyuu if no query is provided!",
     "parameters": [
       "search query"
     ],
@@ -814,7 +818,7 @@
     },
     "clientPermissions": [],
     "group": "bot",
-    "description": "Sends support message to this bot's owner (floxYTB#9674)",
+    "description": "Sends support message to this bot's owner (Sakurajimai#6742)",
     "parameters": [
       "Feedback Message"
     ],
@@ -875,7 +879,7 @@
     "aliases": [],
     "guildOnly": true,
     "group": "bot",
-    "description": "Displays various ways to show support for HorizonGame",
+    "description": "Displays various ways to show support for Mai",
     "clientPermissions": [
       "EMBED_LINKS"
     ],
@@ -925,7 +929,7 @@
       "bestgirl"
     ],
     "group": "core",
-    "description": "HorizonGame is the best girl and there's no denying it!",
+    "description": "Mai is the best girl and there's no denying it!",
     "clientPermissions": [
       "EMBED_LINKS",
       "ATTACH_FILES"
@@ -989,7 +993,7 @@
       "Question answerable by Yes/No"
     ],
     "examples": [
-      "8ball is hori a good bot?",
+      "8ball is mai a good bot?",
       "🎱 is FMA worth of it's top spot?",
       "8b is BNHA good",
       "8-ball Do you want to play Among us?",
@@ -1639,6 +1643,202 @@
     ]
   },
   {
+    "name": "clearqueue",
+    "aliases": [
+      "clear-queue"
+    ],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Add Filter to the current song",
+    "parameters": [],
+    "examples": [
+      "clearqueue"
+    ]
+  },
+  {
+    "name": "filter",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Toggle Filter to the current song",
+    "parameters": [
+      "filter name"
+    ],
+    "examples": [
+      "filter [filter name]"
+    ]
+  },
+  {
+    "name": "filters",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Check all filters",
+    "examples": [
+      "filters"
+    ]
+  },
+  {
+    "name": "loop",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Toggle Loop of the Music system of Mai",
+    "parameters": [],
+    "examples": [
+      "loop"
+    ]
+  },
+  {
+    "name": "nowplaying",
+    "aliases": [
+      "np"
+    ],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Show the currently playing music",
+    "parameters": [],
+    "examples": [
+      "nowplaying"
+    ]
+  },
+  {
+    "name": "pause",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Pause the current music playing",
+    "parameters": [],
+    "examples": [
+      "pause"
+    ]
+  },
+  {
+    "name": "play",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Play songs from Soundcloud, Spotify or Youtube",
+    "parameters": [
+      "Song name or URl of the song or playlist"
+    ],
+    "examples": [
+      "play Why by Sabrina Carpenter",
+      "play https://www.youtube.com/watch?v=fhH4pbRJh0k"
+    ]
+  },
+  {
+    "name": "queue",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Show the Player queue",
+    "parameters": [],
+    "examples": [
+      "queue"
+    ]
+  },
+  {
+    "name": "resume",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Resume the Pause Player",
+    "parameters": [
+      "Song name or URl of the song"
+    ],
+    "examples": [
+      "Resume"
+    ]
+  },
+  {
+    "name": "shuffle",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Shuffle the queue",
+    "parameters": [],
+    "examples": [
+      "shuffle"
+    ]
+  },
+  {
+    "name": "skip",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Skip the current playing song",
+    "parameters": [],
+    "examples": [
+      "skip"
+    ]
+  },
+  {
+    "name": "stop",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Stop the music",
+    "parameters": [],
+    "examples": [
+      "stop"
+    ]
+  },
+  {
+    "name": "volume",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Change Volume of the music",
+    "parameters": [
+      "volume"
+    ],
+    "examples": [
+      "volume 50"
+    ]
+  },
+  {
+    "name": "ytsearch",
+    "aliases": [],
+    "guildOnly": true,
+    "permissions": [],
+    "clientPermissions": [],
+    "group": "music",
+    "description": "Search for music",
+    "parameters": [
+      "Name of the song"
+    ],
+    "examples": [
+      "ytsearch Why Sabrina Carpenter"
+    ]
+  },
+  {
     "name": "addcredits",
     "aliases": [],
     "guildOnly": true,
@@ -1771,11 +1971,13 @@
   },
   {
     "name": "setgoodbyemsg",
-    "aliases": [],
+    "aliases": [
+      "sgm"
+    ],
     "guildOnly": true,
     "adminOnly": true,
     "group": "setup",
-    "description": "Set up the goodbye message. Supports Embeds! [Learn how to set up your Leaving Member Announcer](https://guides.mai-san.ml/)",
+    "description": "Set up the goodbye message. Supports Embeds! [Learn how to set up your Leaving Member Announcer](https://mai-san.ml/guides)",
     "requiresDatabase": true,
     "parameters": [
       "options",
@@ -1855,11 +2057,13 @@
   },
   {
     "name": "setwelcomemsg",
-    "aliases": [],
+    "aliases": [
+      "swm"
+    ],
     "guildOnly": true,
     "adminOnly": true,
     "group": "setup",
-    "description": "Set up the welcome message. Supports Embeds! [Learn how to set up your Welcome Message](https://guides.mai-san.ml/)",
+    "description": "Set up the welcome message. Supports Embeds! [Learn how to set up your Welcome Message](https://mai-san.ml/guides)",
     "requiresDatabase": true,
     "parameters": [
       "options",
@@ -1870,6 +2074,15 @@
       "setwelcomemsg embed=true",
       "setwelcomemsg embed=set -author=image:[ <url> ]"
     ]
+  },
+  {
+    "name": "togglevotenotif",
+    "aliases": [],
+    "group": "setup",
+    "description": "Toggles your vote notification on/off",
+    "requiresDatabase": true,
+    "parameters": [],
+    "examples": []
   },
   {
     "name": "unwatch",
@@ -2017,7 +2230,6 @@
       "balance",
       "credits"
     ],
-    "guildOnly": true,
     "group": "social",
     "clientPermissions": [
       "EMBED_LINKS"
@@ -2035,7 +2247,6 @@
     "aliases": [
       "registerbank"
     ],
-    "guildOnly": true,
     "group": "social",
     "description": "Begin storing your credits on bank. Required because wallet maximum capacity is 50000.",
     "requiresDatabase": true,
@@ -2050,7 +2261,6 @@
       "plead",
       "gimme"
     ],
-    "guildOnly": true,
     "group": "social",
     "description": "Want to earn money some more? Why don't you try begging, maybe someone will give you.",
     "requiresDatabase": true,
@@ -2119,7 +2329,6 @@
   {
     "name": "daily",
     "aliases": [],
-    "guildOnly": true,
     "group": "social",
     "description": "Retrieve your daily reward <3",
     "requiresDatabase": true,
@@ -2148,7 +2357,6 @@
     "aliases": [
       "dep"
     ],
-    "guildOnly": true,
     "group": "social",
     "description": "Deposit your credits to safeguard it!",
     "parameters": [
@@ -2165,7 +2373,6 @@
     "aliases": [
       "search"
     ],
-    "guildOnly": true,
     "group": "social",
     "description": "You can find hidden credits on your surrounding if you try!",
     "requiresDatabase": true,
@@ -2328,7 +2535,6 @@
   {
     "name": "register",
     "aliases": [],
-    "guildOnly": true,
     "group": "social",
     "description": "Start earning credits. Register to keep track of your earned credits!",
     "requiresDatabase": true,
@@ -2473,7 +2679,6 @@
   {
     "name": "withdraw",
     "aliases": [],
-    "guildOnly": true,
     "group": "social",
     "description": "Withdraw some of your money from the bank.",
     "requiresDatabase": true,
