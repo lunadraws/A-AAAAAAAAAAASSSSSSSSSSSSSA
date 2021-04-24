@@ -7,13 +7,9 @@
       "ADD_REACTIONS"
     ],
     "group": "fun",
-    "description": "Envoie un gif de jeu de rôle `baka` dans le tchat, dirigé vers l'utilisateur mentionné, s'il y en a. Habituellement interprété comme 「L'utilisateur auquel cette commande est dirigée est un idiot (dans un contexte kawaii)」.",
-    "parameters": [
-      "User Mention"
+    
     ],
-    "exemple": [
-      "baka @user"
-    ]
+   
   },
   {
     "name": "blush",
