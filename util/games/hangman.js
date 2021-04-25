@@ -25,7 +25,7 @@ module.exports = async (options) => {
     .setColor('GREY')
     .setAuthor('ANIME HANGMAN', hasEnded ? null : 'attachment://timer.gif')
     .setDescription('Guess the word (anime title)')
-    .setFooter(`Game: Hangman | \©️${new Date().getFullYear()} Mai`)
+    .setFooter(`Game: Hangman | \©️${new Date().getFullYear()} Horizongame`)
     .addFields([
       { name: 'Player', value: `\`\`\`properties\n${hangs[stage]}\n\`\`\``, inline: true },
       {
