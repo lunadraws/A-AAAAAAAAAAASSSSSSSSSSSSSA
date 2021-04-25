@@ -26,7 +26,7 @@ module.exports = {
       .setColor(message.guild.me.displayHexColor)
       .setImage(data.url)
       .setAuthor(data.title, null, data.postLink)
-      .setFooter(`${data.subreddit}:Meme | \©️${new Date().getFullYear()} Mai`)
+      .setFooter(`${data.subreddit}:Meme | \©️${new Date().getFullYear()} Horizongame`)
     );
   }
 };
