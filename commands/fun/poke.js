@@ -20,7 +20,7 @@ module.exports = {
     const embed = new MessageEmbed()
     .setColor(message.guild.me.displayHexColor)
     .setImage(url)
-    .setFooter(`Poke | \©️${new Date().getFullYear()} Mai`);
+    .setFooter(`Poke | \©️${new Date().getFullYear()} Horizongame`);
 
     if ((message.guild && !message.mentions.members.size) || !args[0]){
 
