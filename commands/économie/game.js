@@ -32,7 +32,7 @@ module.exports = {
     if (err){
       return message.channel.send(`\`❌ [DATABASE_ERR]:\` La base de données a répondu avec une erreur: ${err.name}`);
     } else if (!doc || doc.data.economy.wallet === null){
-      return message.channel.send(`\\❌ **${message.author.tag}**, inscrivez-vous avant de jouer à un jeu!`);
+      return message.channel.send(`\\❌ **${message.author.tag}**, inscrivez-vous avant de jouer à un jeu : >register`);
     } else if (!title){
       return message.channel.send(`\\❌ **${message.author.tag}**, veuillez fournir le jeu auquel vous voulez jouer.\n\n${categories}`);
     };
