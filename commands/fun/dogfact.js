@@ -28,7 +28,7 @@ module.exports = {
       .setThumbnail('https://i.imgur.com/oTVVqHQ.gif')
       .setColor(message.guild.me.displayHexColor)
       .setDescription(data.facts)
-      .setFooter(`Dogfact | \©️${new Date().getFullYear()} Mai`)
+      .setFooter(`Dogfact | \©️${new Date().getFullYear()} Horizongame`)
     );
   }
 };
