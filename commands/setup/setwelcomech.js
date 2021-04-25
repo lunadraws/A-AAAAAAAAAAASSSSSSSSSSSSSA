@@ -42,7 +42,7 @@ module.exports = {
       return message.channel.send(
         new MessageEmbed()
         .setColor('GREEN')
-        .setFooter(`Member Greeter | \©️${new Date().getFullYear()} Mai`)
+        .setFooter(`Member Greeter | \©️${new Date().getFullYear()} Horizongame`)
         .setDescription([
           '<a:animatedcheck:758316325025087500>\u2000\u2000|\u2000\u2000',
           `Définit avec succès le canal de bienvenue sur ${channel}!\n\n`,
