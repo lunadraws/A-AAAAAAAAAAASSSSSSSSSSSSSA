@@ -25,6 +25,7 @@ module.exports = {
         '**__liens__**', 
         '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
         '[Serveur de support](https://discord.gg/vkKwAKjn7G) | ' +
+        '[Site web](https://horizongame.ml/) | ' +
         '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
       )
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
