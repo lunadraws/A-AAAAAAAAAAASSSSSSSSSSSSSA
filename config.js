@@ -1,7 +1,21 @@
+
 const settings = {
   // pass in any client configuration you want for the bot.
   // more client options can be found at
-  // https://discord.js.org/#/docs/main/stable/typedef/ClientOption
+  // https://discord.js.org/#/docs/main/stable/typedef/ClientOptions
+  client: {
+    presence: {
+      activity: {
+        name: 'https://mai-san.ml/',
+        type: 'COMPETING'
+      }
+    },
+    // Disable Mentions except Users
+    allowedMentions: {parse: ['users']},
+    // Sweep messages every 12 hours
+    messageCacheLifetime: 43200,
+    messageSweepInterval: 43200
+  },
 
   // Websites to monitor, accessible via client#pings
   // function must be instances of promise.
@@ -59,7 +73,7 @@ const settings = {
   // logging channels for the bot. To disable logging specific events - pass
   // a falsy value (undefined, null, 0). You may also remove the property
   // altogether, although this is not preferred.
-  channels: { debug: '833606082776662026', votes: '833606082776662026', uploads: '833606082776662026', logs: '833606082776662026' },
+  channels: { debug: '833606082776662026', votes: '833599071322898457', uploads: '833606082776662026', logs: '833606082776662026' },
 
   // enable/disable database system in the bot, this will automatically disable
   // all commands and features that requires database if disabled.
@@ -83,9 +97,11 @@ const settings = {
   // websites affiliated with the bot, can be accessed through
   // Client#config#websites
   websites: {
-    "invite": "https://discord.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2147483647",
+    "website": "https://horizongame.ml/",
+    "invite": "https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847",
     "support": "https://discord.gg/vkKwAKjn7G",
-    "top.gg": "https://top.gg/bot/688407554904162365",
+    "top.gg": "https://top.gg/bot/688407554904162365/vote",
+    "DBL": "https://discordbotlist.com/bots/horizongame/upvote"
   }
 };
 
