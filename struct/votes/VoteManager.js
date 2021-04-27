@@ -27,7 +27,7 @@ module.exports = class VoteManager{
 
       this.top_gg = {
         api: new Top.Api(process.env.TOP_GG_AUTH),
-        webhook: new Top.Webhook('MaiBestWaifu')
+        webhook: new Top.Webhook('HorizonGame best')
       };
 
       app.post('/dblwebhook', this.top_gg.webhook.middleware(), (req ,res) => {
