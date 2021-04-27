@@ -6,7 +6,7 @@ const settings = {
   client: {
     presence: {
       activity: {
-        name: 'https://mai-san.ml/',
+        name: 'https://horizongame.ml/',
         type: 'COMPETING'
       }
     },
