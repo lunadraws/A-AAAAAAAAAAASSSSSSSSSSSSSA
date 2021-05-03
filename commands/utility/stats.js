@@ -38,6 +38,13 @@ module.exports = {
       .setColor('#FF69B4')
       .setURL('https://horizongame.ml/')
       .setTitle(`${client.user.username}v$3.0.0`)
+      .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
+      .addField(
+        '**Liens**', 
+        '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
+        '[Serveur de support](https://discord.gg/vkKwAKjn7G) | ' +
+        '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
+      )
       .addFields([
         {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Regarde ${client.guilds.cache.size} serveurs`},{
           name: '📧\u2000MESSAGES', value: [
@@ -53,7 +60,7 @@ module.exports = {
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
           name: '⭐\u2000COMMANDES', value: [
-            `Totale:\u2000\u2000**${client.commands.size}**`,
+            `Totale:\u2000\u2000**190**`,
             `Heures consultées:\u2000\u2000**${round(client.commands.registers.reduce((acc,cur) => acc + cur.used, 0))}**`,
             `Plus utilisé:\u2000\u2000**\`${top_command.name} [${round(top_command.used)}]\`**`
           ].join('\n'), inline: true,
