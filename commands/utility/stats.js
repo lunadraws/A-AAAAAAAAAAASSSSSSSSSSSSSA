@@ -70,7 +70,7 @@ module.exports = {
             `Utilisé (*heap*):\u2000\u2000[**\` ${(heapUsed / 1024 / 1024).toFixed(0)} MB \`**]`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
-          name: '⚙️\u2000SYSTEM', value: [
+          name: '⚙️\u2000SYSTÈME', value: [
             `OS:\u2000\u2000**${process.platform} ${release}**`,
             `DiscordJS:\u2000\u2000**v${discord_version}**`,
             `Node:\u2000\u2000**${process.version}**`,
