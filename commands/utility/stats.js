@@ -35,9 +35,9 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor('#FF69B4')
+      .setColor('#0400FF')
       .setURL('https://horizongame.ml/')
-      .setTitle(`${client.user.username}v$3.0.0`)
+      .setTitle(`${client.user.username} v3.0.0`)
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .addField(
         '**Liens**', 
@@ -46,7 +46,7 @@ module.exports = {
         '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
       )
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Regarde ${client.guilds.cache.size} serveurs`},{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\Regarde ${client.guilds.cache.size} serveurs`},{
           name: '📧\u2000MESSAGES', value: [
             `Envoyé:\u2000\u2000**${round(client.messages.sent)}**`,
             `Reçu:\u2000\u2000**${round(client.messages.received)}**`,
