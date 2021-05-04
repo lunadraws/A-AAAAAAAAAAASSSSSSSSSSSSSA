@@ -24,14 +24,8 @@
   <a href="https://github.com/maisans-maid/Mai">
     <img src="https://img.shields.io/github/workflow/status/maisans-maid/mai/Node.js%20CI" alt="build">
   </a>
-  <a href="https://github.com/maisans-maid/Mai/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/maisans-maid/Mai?color=pink&label=License" alt="LICENSE">
-  </a>
-  <a href="https://david-dm.org/maisans-maid/Mai">
-    <img src="https://david-dm.org/maisans-maid/Mai/status.svg" alt="LICENSE">
-  </a>
   <a href="https://support.mai-san.ml/">
-    <img src="https://img.shields.io/discord/703922441768009731?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Online">
+    <img src="https://img.shields.io/discord/833599070684708865DA&label=Support&logo=discord&logoColor=white" alt="Online">
   </a>
 </p>
 <p align="center">
