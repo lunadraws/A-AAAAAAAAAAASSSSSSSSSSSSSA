@@ -20,6 +20,9 @@
   <a href="https://discord.gg/vkKwAKjn7G">
     <img src="https://img.shields.io/discord/833599070684708865?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
   </a>
+<a href="https://github.com/discordjs">
+    <img src="https://img.shields.io/badge/discord.js-v12.3.1-blue.svg?logo=npm" alt="shield.png">
+  </a>
 </p>
 <p align="center">
   
