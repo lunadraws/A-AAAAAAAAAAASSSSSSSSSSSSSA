@@ -17,9 +17,6 @@
   <a href="https://nodejs.org/dist/latest-v14.x/">
     <img src="https://img.shields.io/static/v1?label=node&message=>=14.0.0&color=success&logo=Node.js&logoColor=white" alt="Node Requirements">
   </a>
-  <a href="https://github.com/maisans-maid/Mai">
-    <img src="https://img.shields.io/github/workflow/status/maisans-maid/mai/Node.js%20CI" alt="build">
-  </a>
   <a href="https://discord.gg/vkKwAKjn7G">
     <img src="https://img.shields.io/discord/833599070684708865?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
   </a>
