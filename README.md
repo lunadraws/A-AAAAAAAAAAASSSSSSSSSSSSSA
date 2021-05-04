@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://github.com/maisans-maid/Mai">
-    <img src="https://img.shields.io/github/package-json/v/maisans-maid/mai/master?color=pink&label=Current%20Version" alt="App Version" />
+    <img src="v3.0.0?color=blue&label=Current%20Version" alt="App Version" />
   </a>
   <a href="https://nodejs.org/dist/latest-v14.x/">
     <img src="https://img.shields.io/static/v1?label=node&message=>=14.0.0&color=success&logo=Node.js&logoColor=white" alt="Node Requirements">
