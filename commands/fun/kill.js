@@ -40,7 +40,7 @@ module.exports = {
     } else {
 
       return message.channel.send(
-        embed.setDescription(`${message.member} juste tué ${args[0]}! Réanimation en t-moins n secondes.`)
+        embed.setDescription(`${message.member} à juste tué ${args[0]}! Réanimation en t-moins n secondes.`)
       );
 
     };
