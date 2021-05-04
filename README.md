@@ -24,7 +24,7 @@
   <a href="https://github.com/maisans-maid/Mai">
     <img src="https://img.shields.io/github/workflow/status/maisans-maid/mai/Node.js%20CI" alt="build">
   </a>
-  <a href="https://support.mai-san.ml/">
+  <a href="https://discord.gg/vkKwAKjn7G">
     <img src="https://img.shields.io/discord/833599070684708865DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
   </a>
 </p>
