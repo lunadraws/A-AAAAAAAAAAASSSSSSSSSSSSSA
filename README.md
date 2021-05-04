@@ -20,6 +20,10 @@
   <a href="https://discord.gg/vkKwAKjn7G">
     <img src="https://img.shields.io/discord/833599070684708865?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
   </a>
+<a href="https://www.youtube.com/channel/UCipSxT7a3rn81vGLw9lqRkg?sub_confirmation=1">
+      <img alt="youtube subscribers" title="Subscribe to my YouTube channel" src="https://freshidea.com/jonah/youtube-api/subscribers-badge.php?label=Subscribers&style=for-the-badge&color=red&labelColor=ce4630"/></a> 
+    <a href="https://www.youtube.com/channel/UCipSxT7a3rn81vGLw9lqRkg">
+      <img alt="youtube views" title="YouTube views" src="https://freshidea.com/jonah/youtube-api/view-count-badge.php?label=View+Count&style=for-the-badge&color=blue&labelColor=0b689d"/>
 <a href="https://github.com/discordjs">
     <img src="https://img.shields.io/badge/discord.js-v12.3.1-blue.svg?logo=npm" alt="shield.png">
   </a>
