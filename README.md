@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/github/workflow/status/maisans-maid/mai/Node.js%20CI" alt="build">
   </a>
   <a href="https://discord.gg/vkKwAKjn7G">
-    <img src="https://img.shields.io/discord/833599070684708865DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
+    <img src="https://img.shields.io/discord/833599070684708865?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Online"> 
   </a>
 </p>
 <p align="center">
