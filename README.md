@@ -1,6 +1,6 @@
-<h1 align="center"> <img src='https://cdn.discordapp.com/emojis/757869043117064223.png?v=1' height='50'> Mai</h1>
+<h1 align="center"> <img src='https://cdn.discordapp.com/emojis/757869043117064223.png?v=1' height='50'> Horizongame</h1>
 
-<p align="center"> A Discord Bot Based Around Anime, and Mai </p>
+<p align="center"> A Discord Bot Based Around Anime </p>
 
 <p align="center">
   <a href="http://forthebadge.com/">
