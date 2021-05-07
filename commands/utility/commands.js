@@ -55,7 +55,7 @@ module.exports = {
        )
        .addField(
         '__**utile**__',
-        "`userinfo`, `stats`, `serverinfo`, `servericon`, `serverboost`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `feedback`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
+        "`userinfo`, `stats`, `serverinfo`, `servericon`, `serverboost`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
        )
        .addField(
         '__**musique**__',
