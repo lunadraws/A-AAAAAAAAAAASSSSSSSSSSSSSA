@@ -42,7 +42,7 @@ module.exports = {
       .addField(
         '**Liens**', 
         '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
-        '[Serveur de support](https://discord.gg/PGZjsUvWYz) | ' +
+        '[Serveur de support](https://discord.gg/fF2HAjU6ng) | ' +
         '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
       )
       .addFields([
