@@ -59,7 +59,7 @@ module.exports = {
        )
        .addField(
         '__**musique**__',
-        "`filter`, `leave`, `loop`, `lyrics`, `move`, `nowplaying`, `pause`, `play`, `queue`, `remove`, `resume`, `search`, `shuffle`, `skipto`, `stop`, `volume`"
+        "`clearqueue`, `filter`, `filters`, `lyrics`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`, `ytsearch`"
        )
        
        
