@@ -26,10 +26,10 @@ module.exports = class MusicPlayer extends Player {
     function send({author, description, color}){
       return message.channel.send(
         new MessageEmbed()
-        .setColor(color||'#f04e48')
+        .setColor(color||'#0400FF')
         .setAuthor(author||null)
         .setDescription(description||'')
-        .setFooter(`Music System | \©️${new Date().getFullYear()} Mai`)
+        .setFooter(`Music System | \©️${new Date().getFullYear()} HorizonGame`)
       );
     };
 
