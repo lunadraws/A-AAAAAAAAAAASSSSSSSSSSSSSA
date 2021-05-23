@@ -27,11 +27,11 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed().setDescription(
-        `\u200B\n<a:emoji_49:832655502961934337> **${
+        `\u200B\n **${
           text.commatize(doc.data.economy.wallet)
         }** crédits en possession.\n\n${
           doc.data.economy.bank !== null
-          ? `<a:emoji_50:832655556635525150> **${text.commatize(doc.data.economy.bank)}** crédits en banque!`
+          ? ` **${text.commatize(doc.data.economy.bank)}** crédits en banque!`
           : `On dirait que vous n'avez pas encore de banque. Créez-en un maintenant en tapant \`${
             client.config.prefix
           }bank\``
