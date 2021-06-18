@@ -37,7 +37,7 @@ module.exports = {
     } else {
 
       return message.channel.send(
-        embed.setDescription(`${args[0]} a été giflé par${message.author}! Ça a dû être douloureux~`)
+        embed.setDescription(`${args[0]} a été giflé par ${message.author}! Ça a dû être douloureux~`)
       );
 
     };
