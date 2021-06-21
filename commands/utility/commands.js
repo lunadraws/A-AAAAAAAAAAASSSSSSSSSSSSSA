@@ -55,11 +55,15 @@ module.exports = {
        )
        .addField(
         '__**utile**__',
-        "`userinfo`, `stats`, `serverinfo`, `servericon`, `serverboost`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
+        "`userinfo`, `stats`, `serverinfo`, `servericon`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
        )
        .addField(
         '__**musique**__',
         "`clearqueue`, `filter`, `filters`, `lyrics`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`, `ytsearch`"
+       )
+       .addField(
+        '__**invite-managers**__',
+        "`addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`"
        )
        
        
