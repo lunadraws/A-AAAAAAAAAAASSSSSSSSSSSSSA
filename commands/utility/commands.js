@@ -21,14 +21,7 @@ module.exports = {
       .setAuthor('Liste complète des commandes de HorizonGame!')
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .setTimestamp()
-      .addField(
-        '**__liens__**', 
-        '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
-        '[Serveur de support](https://discord.gg/fF2HAjU6ng) | ' +
-        '[Site web](https://horizongame.ml/) | ' +
-        '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
-        '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
-      )
+      
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
       .addField(
           '🎨┇**__couleur__**',
@@ -65,7 +58,14 @@ module.exports = {
         '🔍┇__**invite-managers**__',
         "`addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`, `invite`, `joinstats`, `topinvite`"
        )
-       
+       .addField(
+        '**__liens__**', 
+        '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
+        '[Serveur de support](https://discord.gg/fF2HAjU6ng) | ' +
+        '[Site web](https://horizongame.ml/) | ' +
+        '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
+        '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
+      )
        
     );
   }
