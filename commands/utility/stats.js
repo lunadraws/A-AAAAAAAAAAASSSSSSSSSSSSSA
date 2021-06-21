@@ -60,7 +60,7 @@ module.exports = {
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
           name: '⭐\u2000COMMANDES', value: [
-            `Totale:\u2000\u2000**190**`,
+            `Totale:\u2000\u2000**208**`,
             `Heures consultées:\u2000\u2000**${round(client.commands.registers.reduce((acc,cur) => acc + cur.used, 0))}**`,
             `Plus utilisé:\u2000\u2000**\`${top_command.name} [${round(top_command.used)}]\`**`
           ].join('\n'), inline: true,
