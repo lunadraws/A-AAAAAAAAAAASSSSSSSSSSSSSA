@@ -60,7 +60,7 @@ module.exports = {
        )
        .addField(
         '🖇️┇**__liens__**', 
-        '**[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
+        '> **[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
         '[Support](https://discord.gg/fF2HAjU6ng) | ' +
         '[Site web](https://horizongame.ml/) | ' +
         '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
