@@ -31,38 +31,38 @@ module.exports = {
       )
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
       .addField(
-          '**__couleur__**',
+          '🎨┇**__couleur__**',
            "`color`, `colors`, `createcolor`, `createdefaultcolors`, `randomcolor`")
        .addField(
-        '__**modération**__',
+        '🚫┇__**modération**__',
         "`setnickname`, `slowmode`, `addemoji`, `addroles`, `ban`, `clear`, `hackban`, `kick`, `lockdown`, `mute`, `nuke`, `resetchannel`, `resetroles`, `reponse`, `softban`, `softlockdown`, `softmute`, `unban`, `unmute`"
        )
        .addField(
-        '__**anime**__',
+        '✏️┇__**anime**__',
         "`alprofile`, `anime`, `animeme`, `aniquote`, `anirandom`, `character`, `discover`, `hanime`, `malprofile`, `manga`, `mangarandom`, `nextairdate`, `schedule`, `seiyuu`, `upcoming`, `waifu`"
        )
        .addField(
-        '__**économie**__',
+        '💰┇__**économie**__',
         "`addcredits`, `bal`, `bank`, `beg`, `bet`, `creditslb`, `daily`, `deposit`, `find`, `game`, `leaderboard`, `nonxpchannels`, `profile`, `register`, `setbio`, `setbirthday`, `setcolor`, `tip`, `pay`, `withdraw`"
        )
        .addField(
-        '__**configuration**__',
+        '⚙️┇__**configuration**__',
         "`setlogchannel`, `disableanisched`, `goodbyetoggle`, `setanischedch`, `setgoodbyech`, `setgoodbyemsg`, `setmute`, `setsuggestch`, `setwelcomech`, `setwelcomemsg`, `togglevotenotif`, `unwatch`, `userxpreset`, `watch`, `welcometoggle`, `xpenable`, `xpexcempt`, `xpreset`, `xptoggle`"
        )
        .addField(
-        '__**amusant**__',
+        '😆┇__**amusant**__',
         "`youtube`, `yesno`, `trumptweet`, `trivia`, `translate`, `topics`, `thouart`, `solotrivia`, `shibe`, `say`, `rps`, `minesweeper`, `math`, `geometrydashsay`, `fox`, `emojify`, `duck`, `dog`, `corona`, `coinflip`, `cat`, `bird`, `8ball`, `advice`, `baka`, `birdfacts`, `blush`, `catfacts`, `comment`, `cry`, `dance`, `disgust`, `dogfacts`, `feed`, `fortune`, `happy`, `holdhands`, `horoscope`, `hug`, `invert`, `joke`, `kill`, `kiss`, `lick`, `meme`, `midfing`, `pandafacts`, `pat`, `poke`, `pokemon`, `rate`, `respect`, `reverse`, `roll`, `slap`, `sleep`, `smile`, `smug`, `suicide`, `tickle`, `triggered`, `wave`, `wink`"
        )
        .addField(
-        '__**utile**__',
+        '🔑┇__**utile**__',
         "`userinfo`, `stats`, `serverinfo`, `servericon`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
        )
        .addField(
-        '__**musique**__',
+        '🎵┇__**musique**__',
         "`clearqueue`, `filter`, `filters`, `lyrics`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`, `ytsearch`"
        )
        .addField(
-        '__**invite-managers**__',
+        '🔍┇__**invite-managers**__',
         "`addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`, `invite`, `joinstats`, `topinvite`"
        )
        
