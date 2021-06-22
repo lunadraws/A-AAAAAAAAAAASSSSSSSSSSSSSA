@@ -99,7 +99,7 @@ const settings = {
   websites: {
     "website": "https://horizongame.ml/",
     "invite": "https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847",
-    "support": "https://discord.gg/PGZjsUvWYz",
+    "support": "https://discord.gg/nA5968UFtP",
     "top.gg": "https://top.gg/bot/688407554904162365/vote",
     "DBL": "https://discordbotlist.com/bots/horizongame/upvote"
   }
