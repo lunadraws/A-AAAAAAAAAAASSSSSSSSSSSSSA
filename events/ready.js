@@ -23,7 +23,7 @@ module.exports = async client => {
       '```Propriétés',
       `Serveurs: ${servers}`,
       `Membres: ${members}`,
-      `Commande: ${commands}`,
+      `Commande: 206`,
       `Ping: ${boot}ms`,
       '```'
     ].join('\n')
