@@ -36,7 +36,7 @@ module.exports = class VoteManager{
         res?.status(200)?.send('OK');
       });
 
-      app.listen(21753);
+      app.listen(process.env.PORT)
     } else {
       // Do nothing..
     };
