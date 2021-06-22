@@ -27,7 +27,7 @@ module.exports = class VoteManager{
 
       this.top_gg = {
         api: new Top.Api(process.env.TOP_GG_AUTH),
-        webhook: new Top.Webhook('HorizonGame best')
+        webhook: new Top.Webhook('https://top.gg/bot/:688407554904162365/webhooks')
       };
 
       app.post('/dblwebhook', this.top_gg.webhook.middleware(), (req ,res) => {
@@ -36,7 +36,7 @@ module.exports = class VoteManager{
         res?.status(200)?.send('OK');
       });
 
-      app.listen(5000);
+      app.listen(1200);
     } else {
       // Do nothing..
     };
