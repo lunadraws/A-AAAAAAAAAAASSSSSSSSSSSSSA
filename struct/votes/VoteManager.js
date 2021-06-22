@@ -36,12 +36,12 @@ module.exports = class VoteManager{
         res?.status(200)?.send('OK');
       });
 
-      app.listen(1200);
+      app.listen(5000);
     } else {
       // Do nothing..
     };
   };
-.listen(process.env.PORT || 5000)
+
   _post(){
     const serverCount = this.client.guilds.cache.size;
     this.dbl?.post();
