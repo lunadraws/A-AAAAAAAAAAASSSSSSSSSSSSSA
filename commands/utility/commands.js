@@ -48,7 +48,7 @@ module.exports = {
        )
        .addField(
         '🔑┇__**utile**__',
-        "> `userinfo`, `stats`, `serverinfo`, `servericon`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `invite`, `ping`, `uptime`"
+        "> `userinfo`, `stats`, `serverinfo`, `servericon`, `roleinfo`, `permissions`, `members`, `findid`, `emojis`, `channelinfo`, `botinfo`, `embed`, `avis`, `avatar`, `reportbug`, `define`, `emoji`, `jisho`, `listrole`, `reddit`, `steam`, `suggest`, `watching`, `ping`"
        )
        .addField(
         '🎵┇__**musique**__',
