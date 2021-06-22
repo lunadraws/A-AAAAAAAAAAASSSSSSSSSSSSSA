@@ -41,7 +41,7 @@ module.exports = class VoteManager{
       // Do nothing..
     };
   };
-
+.listen(process.env.PORT || 5000)
   _post(){
     const serverCount = this.client.guilds.cache.size;
     this.dbl?.post();
