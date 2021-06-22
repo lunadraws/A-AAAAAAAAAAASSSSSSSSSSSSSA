@@ -11,7 +11,7 @@ module.exports = async client => {
   ======================================================*/
 
   const bot = client.user.username;
-  const icon = '<a:gears_turning:785005329171742740>'
+  const icon = '<a:aNS_SakuraHype:854660977491312660> '
   const servers = text.commatize(client.guilds.cache.size);
   const members = text.commatize(client.guilds.cache.reduce((a,b) => a + b.memberCount, 0));
   const commands = client.commands.size;
