@@ -46,7 +46,7 @@ module.exports = {
         '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
       )
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Serving ${client.guilds.cache.size} servers\n\`},{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Serving ${client.guilds.cache.size} servers`},{
           name: '📧\u2000MESSAGES', value: [
             `Envoyé:\u2000\u2000**${round(client.messages.sent)}**`,
             `Reçu:\u2000\u2000**${round(client.messages.received)}**`,
