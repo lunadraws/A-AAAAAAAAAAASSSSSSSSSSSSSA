@@ -52,7 +52,7 @@ module.exports = {
        )
        .addField(
         '🎵┇__**musique**__',
-        "> `clearqueue`, `filter`, `filters`, `lyrics`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`, `ytsearch`"
+        "> `bassboost`, `clearsong`, `disconnect`, `grab`, `loop`, `loopqueue`, `lyrics`, `nowplaying`, `pause`, `play`, `queue`, `remove`, `resume`, `search`, `seek`, `shuffle`, `skip`, `skipto`, `volume`, `joinytb`"
        )
        .addField(
         '🔍┇__**invite-managers**__',
