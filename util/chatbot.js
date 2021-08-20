@@ -30,7 +30,7 @@ module.exports = async message => {
   };
 
   // Start typing
-  message.channel.startTyping();
+  
 
   // Get a response from the bot via api
   const res = await fetch(`http://api.brainshop.ai/get?bid=${chatbot_id}&key=${chatbot_key}&uid=${message.author.id}&msg=${encodeURIComponent(input)}`)
@@ -44,11 +44,11 @@ module.exports = async message => {
   if (typeof res.cnt !== 'string'){
     return message.channel.send('???', { replyTo: message })
     .then(() => {
-      message.channel.stopTyping();
+     
       return { success: true };
     })
     .catch(() => {
-      message.channel.stopTyping();
+      
       return { success: false };
     });
   };
@@ -56,11 +56,11 @@ module.exports = async message => {
   // send the response
   return message.channel.send(res.cnt , { replyTo: message })
   .then(() => {
-    message.channel.stopTyping();
+    
     return { success: true };
   })
   .catch(() => {
-    message.channel.stopTyping();
+    
     return { success: false };
   });
 };
