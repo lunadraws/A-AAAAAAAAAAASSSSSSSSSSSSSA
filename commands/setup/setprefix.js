@@ -33,7 +33,7 @@ module.exports = {
         client.guildProfiles.get(message.guild.id).prefix = doc.prefix;
         return message.channel.send([
           
-          ][Number(!!doc.prefix)]
+          ]
         ].join(' '));
       }).catch(()=> message.channel.send(`\`❌ [DATABASE_ERR]:\` Unable to save the document to the database, please try again later!`));
     };
