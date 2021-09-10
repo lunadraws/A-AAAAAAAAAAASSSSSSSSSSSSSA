@@ -6,7 +6,7 @@ const settings = {
   client: {
     presence: {
       activity: {
-        name: 'https://horizongame.ml/',
+        name: 'https://zbdfd.ml/',
         type: 'COMPETING'
       }
     },
@@ -65,7 +65,7 @@ const settings = {
 
   // set the default prefix, if non-string data-type is provided, will resolve
   // to the prefix 'm!'
-  prefix: '>',
+  prefix: '*',
 
   // allowed features for the bot, you can add/remove features you want.
   allowedFeatures: [ 'ANISCHEDULE', 'CHATBOT', 'EXPERIENCE_POINTS'],
@@ -73,7 +73,7 @@ const settings = {
   // logging channels for the bot. To disable logging specific events - pass
   // a falsy value (undefined, null, 0). You may also remove the property
   // altogether, although this is not preferred.
-  channels: { debug: '837655675663286302', votes: '837655675663286302', uploads: '837655675663286302', logs: '837655675663286302' },
+  channels: { debug: '885803337709150238', votes: '885803337709150238', uploads: '885803337709150238', logs: '885803337709150238' },
 
   // enable/disable database system in the bot, this will automatically disable
   // all commands and features that requires database if disabled.
@@ -92,14 +92,14 @@ const settings = {
   
   // Array of owners recognized by the bot. ID here will be given access to
   // owner based commands.
-  owners: [ '340164875193942016' ],
+  owners: [ '681921952968998966' ],
 
   // websites affiliated with the bot, can be accessed through
   // Client#config#websites
   websites: {
-    "website": "https://horizongame.ml/",
+    "website": "https://zbdfd.ml/",
     "invite": "https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847",
-    "support": "https://discord.gg/nA5968UFtP",
+    "support": "https://discord.gg/5qbAGCykRd",
     "top.gg": "https://top.gg/bot/688407554904162365/vote",
     "DBL": "https://discordbotlist.com/bots/horizongame/upvote"
   }
