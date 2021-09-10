@@ -17,16 +17,13 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor(#3A871F)
       .setAuthor('Liste complète des commandes de HorizonGame!')
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .setTimestamp()
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
-      .addField(
-          '🎨┇**__couleur__**',
-           "> `color`, `colors`, `createcolor`, `createdefaultcolors`, `randomcolor`")
-       .addField(
+        .addField(
         '🚫┇__**modération**__',
         "> `setnickname`, `slowmode`, `addemoji`, `addroles`, `ban`, `clear`, `hackban`, `kick`, `lockdown`, `mute`, `nuke`, `resetchannel`, `resetroles`, `reponse`, `softban`, `softlockdown`, `softmute`, `unban`, `unmute`"
        )
@@ -61,10 +58,10 @@ module.exports = {
        .addField(
         '🖇️┇**__liens__**', 
         '> **[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
-        '[Support](https://discord.gg/nA5968UFtP) | ' +
-        '[Site web](https://horizongame.ml/) | ' +
+        '[Support](https://discord.gg/5qbAGCykRd) | ' +
+        '[Site web](https://zbdfd.ml/) | ' +
         '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
-        '[Youtube](https://youtube.com/c/FloxYtbTuto)**'
+        '[Youtube](https://youtube.com/c/NettleYTBBDFD)**'
       )
        
     );
