@@ -12,10 +12,19 @@ module.exports = {
   examples: [
     'setprefix ?'
   ],
-  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => { };
+  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => {
 
-   
+   if (!prefix){
+      return message.channel.send(` `);
+    } else if (prefix.length > 5){
+      return message.channel.send(` `);
+    } else {
 
+      if (err){
+        return message.channel.send(` `);
+      } else if (!doc){
+        doc = new guilds({ _id: message.guild.id });
+      }; 
 
       doc.prefix = [prefix, null][Number(!!prefix.match(/clear|reset/i))];
 
