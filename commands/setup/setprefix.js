@@ -12,7 +12,7 @@ module.exports = {
   examples: [
     'setprefix ?'
   ],
-  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => {
+  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => { };
 
    
 
