@@ -12,7 +12,10 @@ module.exports = {
   examples: [
     'setprefix ?'
   ],
-  
+  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => {
+
+   
+
 
       doc.prefix = [prefix, null][Number(!!prefix.match(/clear|reset/i))];
 
