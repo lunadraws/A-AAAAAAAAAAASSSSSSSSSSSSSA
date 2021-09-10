@@ -12,19 +12,7 @@ module.exports = {
   examples: [
     'setprefix ?'
   ],
-  run: (client, message, [prefix]) => guilds.findById(message.guild.id, (err, doc) => {
-
-    if (!prefix){
-      return message.channel.send(`\\❌ **${message.author.tag}**, No new prefix detected! Please type the new prefix.`);
-    } else if (prefix.length > 5){
-      return message.channel.send(`\\❌ **${message.author.tag}**, Invalid prefix. Prefixes cannot be longer than 5 characters!`);
-    } else {
-
-      if (err){
-        return message.channel.send(`\`❌ [DATABASE_ERR]:\` The database responded with error: ${err.name}`);
-      } else if (!doc){
-        doc = new guilds({ _id: message.guild.id });
-      };
+  
 
       doc.prefix = [prefix, null][Number(!!prefix.match(/clear|reset/i))];
 
