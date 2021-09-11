@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const text = require('../../util/string');
 
 module.exports = {
-  name: 'help cmds',
+  name: 'help',
   aliases: [ 'help cmd', 'help command' ],
   group: 'core',
   description: 'Sends a list of all commands from each specific command groups',
@@ -18,7 +18,8 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setColor('#3A871F')
-      .setAuthor('Liste complète des commandes de HorizonGame!')
+      .setAuthor('Liste complète des commandes de HorizonGame!
+Vous pouvez aussi voir les commandes par catégorie : `help invite, help mod , help antiraid , help anime , help eco , help config , help fun , help utile , help music , help level`')
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .setTimestamp()
       
