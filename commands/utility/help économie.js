@@ -36,7 +36,7 @@ module.exports = {
         '<:money:885078204476456980>』__**économie**__',
         "> `addcredits`, `bal`, `bank`, `beg`, `bet`, `creditslb`, `daily`, `deposit`, `find`, `game`, `register`, `pay`, `withdraw`"
        )
-       .
+       
        
     );
   }
