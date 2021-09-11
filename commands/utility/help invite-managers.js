@@ -23,14 +23,7 @@ module.exports = {
       .setTimestamp()
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
-      .addField(
-        '<:valide:885075251371835402>┇**__liens__**', 
-        '> **[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
-        '[Support](https://discord.gg/5qbAGCykRd) | ' +
-        '[Site web](https://zbdfd.ml/) | ' +
-        '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
-        '[Youtube](https://youtube.com/c/NettleYTBBDFD)**'
-      )
+      
        .addField(
         '<:role:885078141209567272>』__**invite-managers**__',
         "> `addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`, `invite`, `joinstats`, `topinvite`"
