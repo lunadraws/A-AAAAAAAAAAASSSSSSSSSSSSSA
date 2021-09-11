@@ -23,15 +23,7 @@ module.exports = {
       .setTimestamp()
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
-      .addField(
-        '<:valide:885075251371835402>┇**__liens__**', 
-        '> **[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
-        '[Support](https://discord.gg/5qbAGCykRd) | ' +
-        '[Site web](https://zbdfd.ml/) | ' +
-        '[Top.gg](https://top.gg/bot/688407554904162365/vote) | ' +
-        '[Youtube](https://youtube.com/c/NettleYTBBDFD)**'
-      )
-       
+
        .addField(
         '<:fun:885078041175400468>』__**amusant**__',
         "> `quiz`, `numberfacts`, `create-quiz`, `8ball`, `advice`, `baka`, `birdfacts`, `blush`, `catfacts`, `comment`, `cry`, `dance`, `disgust`, `dogfacts`, `feed`, `fortune`, `happy`, `holdhands`, `horoscope`, `hug`, `invert`, `joke`, `kill`, `kiss`, `lick`, `meme`, `midfing`, `pandafacts`, `pat`, `poke`, `pokemon`, `rate`, `respect`, `reverse`, `roll`, `slap`, `sleep`, `smile`, `smug`, `suicide`, `tickle`, `triggered`, `wave`, `wink`"
