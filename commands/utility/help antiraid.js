@@ -33,7 +33,7 @@ module.exports = {
       )
        
       .addField(
-         '<:error:885075491416047616>』__**AntiRaid__**',
+         '<:error:885075491416047616>』**__AntiRaid__**',
          "> `anti-dc`, `anti-pub`, `anti-caps`, `anti-mass-mentions`, `anti-spam`, `antiraid-logs`, `check-users`, `ignoreds`, `protect`, `verification`, `backup`"
        )
          
