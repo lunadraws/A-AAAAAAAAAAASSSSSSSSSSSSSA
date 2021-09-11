@@ -24,7 +24,7 @@ Exemple: *help utilities
 `help <`mod , utile , eco , anime , invite , antiraid , level`>
 Préfixe
 Mon préfixe sur Support Horizongame est *.Pour éxécuter des commandes, mettez d'abord le préfixe puis le nom de la commande, exemple: *userinfo.
-Faîtes {prefix}setprefix <prefix> pour changer le préfixe')
+Faîtes `*setprefix` <prefix> pour changer le préfixe')
     
        
        
