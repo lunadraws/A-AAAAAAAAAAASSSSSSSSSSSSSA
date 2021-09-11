@@ -18,7 +18,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setColor('#3A871F')
-      .setAuthor('Liste complète des commandes d'économie de HorizonGame!')
+      .setAuthor('Liste complète des commandes économie de HorizonGame!')
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .setTimestamp()
       
