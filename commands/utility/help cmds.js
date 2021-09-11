@@ -36,11 +36,11 @@ module.exports = {
         "> `addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`, `invite`, `joinstats`, `topinvite`"
        )
        .addField(
-         '<:hammers:885093621026680862>』__**Modération**__',
+         '<:hammers:885093621026680862>』__**modération**__',
          "> `ban-id`, `ban`, `banlist`, `case`, `cases-list`, `clear-warns`, `clear`, `delete-case`, `gend`, `greroll`, `gstart`, `infractions`, `kick`, `lock`, `massban`, `mod-logs`, `mute`, `nuke`, `massrole`, `roles`, `slowmode`, `softban`, `sugg-accept`, `sugg-delete`, `sugg-refuse`, `ticket-add`, `ticket-close`, `unban`, `unbanall`, `unlock`, `unmute`, `warn`"
        )
       .addField(
-         '<:error:885075491416047616>』**__AntiRaid__**',
+         '<:error:885075491416047616>』**__antiRaid__**',
          "> `anti-dc`, `anti-pub`, `anti-caps`, `anti-mass-mentions`, `anti-spam`, `antiraid-logs`, `check-users`, `ignoreds`, `protect`, `verification`, `backup`"
        )
          .addField(
@@ -68,7 +68,7 @@ module.exports = {
         "> `back`, `clearqueue`, `dj-system`, `loop`, `lyrics`, `np`, `pause`, `play`, `queue`, `remove`, `resume`, `seek`, `shuffle`, `skip`, `stop`, `volume`"
        )
        .addField(
-         'levels',
+         '<:level:885078162613108746>』**__système de niveau__**',
          "> `addlevel`, `addxp`, `leaderboard`, `rank`, `remove-rank`, `reset-levels`, `add-rank`, `ranks`"
          )
        
