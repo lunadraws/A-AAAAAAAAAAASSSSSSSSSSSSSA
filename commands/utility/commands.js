@@ -24,31 +24,31 @@ module.exports = {
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
        .addField(
-        '🔍┇__**invite-managers**__',
+        '<:role:885078141209567272>┇__**invite-managers**__',
         "> `addbonus`, `removebonus`, `removeinvites`, `restoreinvites`, `sync-invites`, `config`, `configdmjoin`, `configjoin`, `configleave`, `setdmjoin`, `setjoin`, `setleave`, `testdmjoin`, `testjoin`, `testleave`, `invite`, `joinstats`, `topinvite`"
        )
        .addField(
-         'Moserations',
-         ">'ban-id', 'ban', 'banlist', 'case', 'cases-list', 'clear-warns', 'clear', 'delete-case', 'gend', 'greroll', 'gstart', 'infractions', 'kick', 'lock', 'massban', 'mod-logs', 'mute', 'nuke', 'massrole', 'roles', 'slowmode', 'softban', 'sugg-accept', 'sugg-delete', 'sugg-refuse', 'ticket-add', 'ticket-close', 'unban', 'unbanall', 'unlock', 'unmute', 'warn'"
+         '<:hammers:885093621026680862>┇__**Modération**__',
+         "> `ban-id`, `ban`, `banlist`, `case`, 'cases-list', 'clear-warns', 'clear', 'delete-case', 'gend', 'greroll', 'gstart', 'infractions', 'kick', 'lock', 'massban', 'mod-logs', 'mute', 'nuke', 'massrole', 'roles', 'slowmode', 'softban', 'sugg-accept', 'sugg-delete', 'sugg-refuse', 'ticket-add', 'ticket-close', 'unban', 'unbanall', 'unlock', 'unmute', 'warn'"
        )
       .addField(
-         'anti raid',
-         ">anti-dc, anti-pub, anti-caps, anti-mass-mentions, anti-spam, antiraid-logs, check-users, ignoreds, protect, verification, backup'"
+         '<:error:885075491416047616>┇__**AntiRaid__**',
+         "> anti-dc, anti-pub, anti-caps, anti-mass-mentions, anti-spam, antiraid-logs, check-users, ignoreds, protect, verification, backup'"
        )
          .addField(
-        '✏️┇__**anime**__',
+        '<:search:885115865417261066>┇__**anime**__',
         "> `alprofile`, `anime`, `animeme`, `aniquote`, `anirandom`, `character`, `discover`, `hanime`, `malprofile`, `manga`, `mangarandom`, `nextairdate`, `schedule`, `seiyuu`, `upcoming`, `waifu`"
        )
        .addField(
-        '💰┇__**économie**__',
+        '<:money:885078204476456980>┇__**économie**__',
         "> `addcredits`, `bal`, `bank`, `beg`, `bet`, `creditslb`, `daily`, `deposit`, `find`, `game`, `leaderboard`, `nonxpchannels`, `profile`, `register`, `setbio`, `setbirthday`, `setcolor`, `tip`, `pay`, `withdraw`"
        )
        .addField(
-        '⚙️┇__**configuration**__',
+        '<:config:885078094426279977>┇__**configuration**__',
         "> auto-music, autoping, auto-publish, auto-reactions, auto-responders, autonick, autorole, boost-message, botautonick, botautorole, chatbot, count-channel, glogs, language, counter, rolereact, set-sugg, setcolor, set-logs, setprefix, tempvoc, ticket-system, youtube-alerts, `setlogchannel`, `disableanisched`, `goodbyetoggle`, `setanischedch`, `setgoodbyech`, `setgoodbyemsg`, `setmute`, `setsuggestch`, `setwelcomech`, `setwelcomemsg`, `togglevotenotif`, `unwatch`, `userxpreset`, `watch`, `welcometoggle`, `xpenable`, `xpexcempt`, `xpreset`, `xptoggle`"
        )
        .addField(
-        '😆┇__**amusant**__',
+        '<:fun:885078041175400468>┇__**amusant**__',
         "> quiz, numberfacts, create-quiz, `8ball`, `advice`, `baka`, `birdfacts`, `blush`, `catfacts`, `comment`, `cry`, `dance`, `disgust`, `dogfacts`, `feed`, `fortune`, `happy`, `holdhands`, `horoscope`, `hug`, `invert`, `joke`, `kill`, `kiss`, `lick`, `meme`, `midfing`, `pandafacts`, `pat`, `poke`, `pokemon`, `rate`, `respect`, `reverse`, `roll`, `slap`, `sleep`, `smile`, `smug`, `suicide`, `tickle`, `triggered`, `wave`, `wink`"
        )
        .addField(
