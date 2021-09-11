@@ -18,12 +18,12 @@ module.exports = {
       const embed = new MessageEmbed()
     .setColor('0400ff')
     .setDescription('Informations sur une commande
-• Faîtes *help <commande>  Pour plus dinformations sur une commande et *help <catégorie> pour plus d'informations sur une catégorie.
+• Faîtes *help <commande>  Pour plus dinformations sur une commande et *help <catégorie> pour plus dinformations sur une catégorie.
 Exemple: *help utilities
 • Vous pouvez faire *help commands pour voir la liste des commandes sans passer par le site
 `help <`mod , utile , eco , anime , invite , antiraid , level`>
 Préfixe
-Mon préfixe sur Support Horizongame est *.Pour éxécuter des commandes, mettez d'abord le préfixe puis le nom de la commande, exemple: *userinfo.
+Mon préfixe sur Support Horizongame est *.Pour éxécuter des commandes, mettez dabord le préfixe puis le nom de la commande, exemple: *userinfo.
 Faîtes *setprefix <prefix> pour changer le préfixe')
     
        
