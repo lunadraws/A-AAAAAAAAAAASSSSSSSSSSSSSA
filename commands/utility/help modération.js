@@ -33,7 +33,7 @@ module.exports = {
       )
       
        .addField(
-         '<:hammers:885093621026680862>』__**Modération**__',
+         '<:hammers:885093621026680862>』__**modération**__',
          "> `ban-id`, `ban`, `banlist`, `case`, `cases-list`, `clear-warns`, `clear`, `delete-case`, `gend`, `greroll`, `gstart`, `infractions`, `kick`, `lock`, `massban`, `mod-logs`, `mute`, `nuke`, `massrole`, `roles`, `slowmode`, `softban`, `sugg-accept`, `sugg-delete`, `sugg-refuse`, `ticket-add`, `ticket-close`, `unban`, `unbanall`, `unlock`, `unmute`, `warn`"
        )
       
