@@ -2,8 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const text = require('../../util/string');
 
 module.exports = {
-  name: 'help',
-  aliases: [ 'help cmd', 'help command' ],
+  name: 'help-anime',
   group: 'core',
   description: 'Sends a list of all commands from each specific command groups',
   clientPermissions: [ 'EMBED_LINKS' ],
