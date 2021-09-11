@@ -18,13 +18,15 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setColor('#3A871F')
-      .setAuthor('Liste complète des commandes de HorizonGame!
-Vous pouvez aussi voir les commandes par catégorie : `help invite, help mod , help antiraid , help anime , help eco , help config , help fun , help utile , help music , help level`')
+      .setAuthor('Liste complète des commandes de HorizonGame!')
       .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
       .setTimestamp()
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
-      .addField(
+       .addField(
+       '**__Informations__**',
+       'Vous pouvez aussi voir les commandes par catégorie : `help invite, help mod , help antiraid , help anime , help eco , help config , help fun , help utile , help music , help level`')
+       .addField(
         '<:valide:885075251371835402>┇**__liens__**', 
         '> **[Invite moi](https://discordapp.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | ' +
         '[Support](https://discord.gg/5qbAGCykRd) | ' +
