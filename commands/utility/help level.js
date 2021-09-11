@@ -18,7 +18,7 @@ module.exports = {
       new MessageEmbed()
       .setColor('#3A871F')
       .setAuthor('Liste complète des commandes du système de niveau de HorizonGame!')
-      .setImage('https://cdn.discordapp.com/attachments/766973870350663730/814984024233345024/standard.gif')
+      .setImage('https://media.discordapp.net/attachments/885198288234622996/886339731254829056/standard_1.gif')
       .setTimestamp()
       
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
