@@ -2,8 +2,8 @@ const { MessageEmbed } = require('discord.js');
 const text = require('../../util/string');
 
 module.exports = {
-  name: 'help',
-  aliases: [ 'cmd', 'command' ],
+  name: 'help cmds',
+  aliases: [ 'help cmd', 'help command' ],
   group: 'core',
   description: 'Sends a list of all commands from each specific command groups',
   clientPermissions: [ 'EMBED_LINKS' ],
@@ -40,7 +40,7 @@ module.exports = {
          "> `ban-id`, `ban`, `banlist`, `case`, `cases-list`, `clear-warns`, `clear`, `delete-case`, `gend`, `greroll`, `gstart`, `infractions`, `kick`, `lock`, `massban`, `mod-logs`, `mute`, `nuke`, `massrole`, `roles`, `slowmode`, `softban`, `sugg-accept`, `sugg-delete`, `sugg-refuse`, `ticket-add`, `ticket-close`, `unban`, `unbanall`, `unlock`, `unmute`, `warn`"
        )
       .addField(
-         '<:error:885075491416047616>』__**AntiRaid__**',
+         '<:error:885075491416047616>』**__AntiRaid__**',
          "> `anti-dc`, `anti-pub`, `anti-caps`, `anti-mass-mentions`, `anti-spam`, `antiraid-logs`, `check-users`, `ignoreds`, `protect`, `verification`, `backup`"
        )
          .addField(
