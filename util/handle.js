@@ -55,9 +55,4 @@ function CommandHandler(manager, message){
 
   
 
-
-
-  return { executed: true };
-};
-
 module.exports = CommandHandler;
