@@ -55,17 +55,8 @@ function CommandHandler(manager, message){
 
   const { accept: cooldown_accepted, timeLeft } = command.testCooldown(message, command);
 
-  if (!cooldown_accepted){
-     message.channel.send([
-      '<:error:885075491416047616>\u2000\u2000|\u2000\u2000${message.author}',
-      `${command.cooldown.message}\n<:horlo:885097507699429376>\u2000\u2000|\u2000\u2000Time left:`,
-      duration(timeLeft, 'milliseconds').format('H [hours, ] m [minutes, and] s [seconds]')
-    ].join(' '))
 
-    return { executed: false, reason: 'COOLDOWN' };
-  } else {
-    command.run(message.client, message, args);
-  };
+
 
   return { executed: true };
 };
