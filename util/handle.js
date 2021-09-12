@@ -13,8 +13,8 @@ function CommandHandler(manager, message){
   const serverprefix = message.client.guildProfiles.get(message.guild?.id)?.prefix || null;
   let prefix;
 
-  if (message.content.startsWith('hori')){
-    prefix = 'hori'
+  if (message.content.startsWith('mai')){
+    prefix = 'mai'
   } else if (message.content.startsWith(message.client.prefix)){
     prefix = message.client.prefix;
   } else if (serverprefix && message.content.startsWith(serverprefix)){
@@ -53,6 +53,21 @@ function CommandHandler(manager, message){
     return { executed: false, reason: 'PERMISSION' };
   };
 
-  
+  const { accept: cooldown_accepted, timeLeft } = command.testCooldown(message, command);
+
+  if (!cooldown_accepted){
+     message.channel.send([
+      `❌\u2000\u2000|\u2000\u2000${message.author}`,
+      `${command.cooldown.message}\n⏳\u2000\u2000|\u2000\u2000Time left:`,
+      duration(timeLeft, 'milliseconds').format('H [hours, ] m [minutes, and] s [seconds]')
+    ].join(' '))
+
+    return { executed: false, reason: 'COOLDOWN' };
+  } else {
+    command.run(message.client, message, args);
+  };
+
+  return { executed: true };
+};
 
 module.exports = CommandHandler;
