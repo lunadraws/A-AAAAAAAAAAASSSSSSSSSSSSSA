@@ -32,7 +32,7 @@ module.exports = {
 
     const { errors , data } = await client.anischedule.fetch(`query ($id: Int) { Media(id: $id){ siteUrl id idMal synonyms isAdult format startDate { year month day } episodes duration genres studios(isMain:true){ nodes{ name siteUrl } } coverImage{ large color } description title { romaji english native userPreferred } } }`, { id });
 
-    const embed = new MessageEmbed().setColor(message.guild.me.displayHexColor)
+    const embed = new MessageEmbed().setColor('#3A871F')
     .setFooter(`Recommandations aléatoires | \©️${new Date().getFullYear()} HorizonGame`);
 
     // If errored due to ratelimit error
@@ -70,7 +70,7 @@ module.exports = {
     };
 
     return message.channel.send(
-      embed.setColor(data.Media.coverImage.color || 'GREY')
+      embed.setColor('#3A871F') || 'GREEN')
       .setAuthor([
         text.truncate(data.Media.title.romaji || data.Media.title.english || data.Media.title.native),
         client.anischedule.info.mediaFormat[data.Media.format]
