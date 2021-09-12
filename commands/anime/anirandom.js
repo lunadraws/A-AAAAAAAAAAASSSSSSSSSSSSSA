@@ -108,6 +108,6 @@ module.exports = {
           value: text.truncate(toMarkdown(decode((data.Media.description || '').replace(/<br>/g,''))), 1000, ` […Read More](https://myanimelist.net/anime/${data.Media.idMal})`) || '\u200b'
         }
       ]).setThumbnail(data.Media.coverImage.large)
-    ).then(() => message.channel.stopTyping());
+    )
   }
 };
