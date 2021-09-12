@@ -57,8 +57,8 @@ function CommandHandler(manager, message){
 
   if (!cooldown_accepted){
      message.channel.send([
-      `<:cancel:767062250279927818>\u2000\u2000|\u2000\u2000${message.author}`,
-      `${command.cooldown.message}\n⏳\u2000\u2000|\u2000\u2000Time left:`,
+      '<:error:885075491416047616>\u2000\u2000|\u2000\u2000${message.author}',
+      `${command.cooldown.message}\n<:horlo:885097507699429376>\u2000\u2000|\u2000\u2000Time left:`,
       duration(timeLeft, 'milliseconds').format('H [hours, ] m [minutes, and] s [seconds]')
     ].join(' '))
 
