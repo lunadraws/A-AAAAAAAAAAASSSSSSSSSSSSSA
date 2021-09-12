@@ -70,7 +70,7 @@ module.exports = {
     };
 
     return message.channel.send(
-      embed.setColor('#3A871F') || 'GREEN')
+      embed.setColor('#3A871F')
       .setAuthor([
         text.truncate(data.Media.title.romaji || data.Media.title.english || data.Media.title.native),
         client.anischedule.info.mediaFormat[data.Media.format]
