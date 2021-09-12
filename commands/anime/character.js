@@ -29,7 +29,7 @@ module.exports = {
     const query = args.join(' ') || 'Asuna Yuuki';
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setDescription(`Recherche du personnage nommé **${query}** sur [MyAnimeList](https://myanimelist.net 'Homepage').`)
     .setThumbnail('https://i.imgur.com/u6ROwvK.gif')
     .setFooter(`Requête de caractère avec MAL | \©️${new Date().getFullYear()}`);
@@ -45,7 +45,7 @@ module.exports = {
       "503": `Impossible d’accéder ${badge}. Le site est peut-être actuellement indisponible pour le moment`,
     }
 
-    embed.setColor(message.guild.me.displayHexColor)
+    embed.setColor('#3A871F')
     .setAuthor(data.status == 404 ? 'None Found' : 'Erreur de réponse','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
     .setDescription(`**${message.member.displayName}**, ${errstatus[data.status] || `${badge} a répondu avec un code d'erreur HTTP a répondu avec un code d'erreur HTTP ${data.status}`}`)
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048');
@@ -78,7 +78,7 @@ module.exports = {
 
     embed.setAuthor(`${res.name} ${res.name_kanji ? `• ${res.name_kanji}` : ''}`, null, res.url)
     .setThumbnail(res.image_url)
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setDescription(text.truncate(res.about.replace(/\\n/g,''),500,`... [Read More](${res.url})`))
     .setFooter(  `Requête de caractère avec MAL | \©️${new Date().getFullYear()} horizonGame`)
     .addFields([
