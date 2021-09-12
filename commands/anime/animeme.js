@@ -49,7 +49,7 @@ module.exports = {
       };
       if (!memes.size) {
         return message.channel.send(
-          new MessageEmbed().setColor('RED')
+          new MessageEmbed() .setColor('#3A871F')
           .setAuthor('Erreur de récupération','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
           .setThumbnail('https://i.imgur.com/qkBQB8V.png')
           .setFooter(`Animème | \©️${new Date().getFullYear()} HorizonGame`)
@@ -93,7 +93,7 @@ async function reloadMeme(memes,message){
 
 function embedMeme({ title, ups, downs, link, image, timestamp }){
   return new MessageEmbed()
-  .setColor('#0400FF')
+  .setColor('#3A871F')
   .setTitle(title)
   .setURL(link)
   .setImage(image)
