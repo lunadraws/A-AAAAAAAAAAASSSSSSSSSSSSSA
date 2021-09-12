@@ -68,7 +68,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setURL(data.url)
       .setThumbnail(data.picture || null)
       .setFooter(`Requête d'anime avec MAL | \©️${new Date().getFullYear()} HorizonGame`)
