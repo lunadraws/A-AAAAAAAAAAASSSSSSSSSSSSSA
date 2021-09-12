@@ -53,8 +53,7 @@ function CommandHandler(manager, message){
     return { executed: false, reason: 'PERMISSION' };
   };
 
-  const { accept: cooldown_accepted, timeLeft } = command.testCooldown(message, command);
-
+  
 
 
 
