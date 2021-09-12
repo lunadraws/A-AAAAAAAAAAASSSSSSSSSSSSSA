@@ -26,7 +26,7 @@ module.exports = {
     .setDescription(`**${message.member.displayName}**, Veuillez préciser s'il s'agit de \`ANIME\` ou \`MANGA\`.`)
     .setAuthor('Catégorie non reconnue!','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setFooter(`discover | \©️${new Date().getFullYear()} HorizonGame`);
 
     if (!category || !['anime','manga'].includes(category)){
@@ -95,7 +95,7 @@ module.exports = {
     for (const info of data){
       discoveryPages.add(
         new MessageEmbed()
-        .setColor(info.coverImage.color || 'GREY')
+        .setColor('#3A871F')
         .setAuthor([
           profile[category].genres[index],
           text.truncate(info.title.romaji || info.title.english || info.title.native),
