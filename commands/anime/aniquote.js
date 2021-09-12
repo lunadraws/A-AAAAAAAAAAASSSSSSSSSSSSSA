@@ -20,7 +20,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .addField(`*Cité de ${anime}*`,`${quote}\n\n-*${name}*`)
       .setImage(image)
       .setTimestamp()
