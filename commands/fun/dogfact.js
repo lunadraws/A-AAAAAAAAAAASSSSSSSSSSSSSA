@@ -26,7 +26,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setThumbnail('https://i.imgur.com/oTVVqHQ.gif')
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setDescription(data.facts)
       .setFooter(`Dogfact | \©️${new Date().getFullYear()} Horizongame`)
     );
