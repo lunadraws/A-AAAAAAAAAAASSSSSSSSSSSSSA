@@ -59,7 +59,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setFooter(`MALProfile | \©️${new Date().getFullYear()} HorizonGame`)
       .setAuthor(`${response.username}'s Profile`, response.image_url, response.url)
       .setDescription([
