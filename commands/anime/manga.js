@@ -28,7 +28,7 @@ module.exports = {
     const query = args.join(' ') || 'sword art online';
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setDescription(`Recherche de manga intitulé **${query}** sur [MyAnimeList](https://myanimelist.net 'Homepage').`)
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
     .setFooter(`Requête manga avec MAL | \©️${new Date().getFullYear()} HorizonGame`);
@@ -64,7 +64,7 @@ module.exports = {
       pages.add(
         new MessageEmbed()
         .setAuthor(res.title, res.image_url, res.url)
-        .setColor(message.guild.me.displayHexColor)
+        .setColor('#3A871F')
         .setThumbnail(res.image_url)
         .setFooter([
           `Durée de la recherchen: ${Math.abs(elapsed / 1000).toFixed(2)} secondes`,
