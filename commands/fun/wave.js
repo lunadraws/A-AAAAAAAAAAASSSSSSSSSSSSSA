@@ -18,7 +18,7 @@ module.exports = {
 
     const url = client.images.wave();
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setImage(url)
     .setFooter(`Wave | \©️${new Date().getFullYear()} HorizonGame`);
 
