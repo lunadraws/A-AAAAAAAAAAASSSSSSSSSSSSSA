@@ -37,9 +37,9 @@ module.exports = {
       new MessageEmbed()
       .setColor('#3A871F')
       .setURL('https://zbdfd.ml/')
-      .setTitle(`${client.user.username}v4.0.0`)
+      .setTitle('**__stats__**')
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'HorizonGame est un bot Discord entièrement personnalisable qui ne cesse de croître. Elle est livrée avec une variété de commandes et une multitude de paramètres pouvant être adaptés aux besoins spécifiques de votre serveur. Elle a été mise en ligne pour la première fois le  14 Mars 2020.'},{
           name: '<:emoji_19:885087722828611625>\u2000__**MESSAGES**__', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
@@ -69,7 +69,7 @@ module.exports = {
             `CPU:\u2000\u2000**${cpus()[0].model}**`,
           ].join('\n'),
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`**__Uptime__**:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.`}
-      ]).setFooter(`Bot Status | \©️${new Date().getFullYear()} HorizonGame`)
+      ]).setFooter(`\©️${new Date().getFullYear()} HorizonGame`)
     );
   }
 };
