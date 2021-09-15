@@ -31,7 +31,7 @@ module.exports = {
     };
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
     .setDescription(`\u200B\n Aller chercher **${day}** horaires d'anime à partir de [MyAnimeList](https://myanimelist.net 'MyAnimeList Homepage').\n\u200B`)
     .setFooter(`Programmer une requête avec MAL | \©️${new Date().getFullYear()} HorizonGame`)
@@ -43,7 +43,7 @@ module.exports = {
     if (!res || res.error){
       res = res ? res : {};
 
-      embed.setColor(message.guild.me.displayHexColor)
+      embed.setColor('#3A871F')
       .setAuthor(res.error === 'Bad Request' ? 'Unknown day' : 'Response Error','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
       .setDescription([
         `**${message.member.displayName}**, ${res.error === 'Bad Request' ? 'Could not recognize input' : 'An unexpected error occured!'}\n\n`,
@@ -60,7 +60,7 @@ module.exports = {
     for ( const info of res[day] ){
       pages.add(
         new MessageEmbed()
-        .setColor(message.guild.me.displayHexColor)
+        .setColor('#3A871F')
         .setThumbnail(info.image_url)
         .setDescription([
           `${info.score ? `**Score**:\u2000${info.score}\n`: ''}`,
