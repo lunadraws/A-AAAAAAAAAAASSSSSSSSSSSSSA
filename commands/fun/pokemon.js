@@ -19,7 +19,7 @@ module.exports = {
 
     const query = args.join(' ') || 'Pikachu';
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setFooter(`Pokédex - La société Pokémon\©️ | \©️${new Date().getFullYear()} HorizonGame`);
 
     const prompt = await message.channel.send(
@@ -31,7 +31,7 @@ module.exports = {
     .then(res => res.json())
     .catch(()=>null);
 
-    embed.setColor(message.guild.me.displayHexColor)
+    embed.setColor('#3A871F')
     .setThumbnail(null)
     .setAuthor('Pokédex indisponible', 'https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
     .setDescription('Le fournisseur Pokedex a répondu avec l\'erreur 5xx. Veuillez réessayer plus tard.')
@@ -51,7 +51,7 @@ module.exports = {
     data.stats = data.stats || {};
     data.family.evolutionLine = data.family.evolutionLine || [];
 
-    embed.setColor(message.guild.me.displayHexColor)
+    embed.setColor('#3A871F')
     .setDescription('')
     .setThumbnail(data.sprites.animated || data.sprites.normal || null)
     .setAuthor(`Entrée Pokédex #${data.id} ${data.name.toUpperCase()}`,'https://i.imgur.com/uljbfGR.png', 'https://pokemon.com/us')
