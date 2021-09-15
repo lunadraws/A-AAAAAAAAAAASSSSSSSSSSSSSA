@@ -16,7 +16,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setDescription(`${message.author} est heureux.`)
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setImage(client.images.happy())
       .setFooter(`Happy | \©️${new Date().getFullYear()} HorizonGame`)
     );
