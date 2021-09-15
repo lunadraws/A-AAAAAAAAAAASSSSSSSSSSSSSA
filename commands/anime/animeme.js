@@ -31,7 +31,7 @@ module.exports = {
       await reloadMeme(memes, message);
 
       if (!memes.size){
-        return message.channel.send('<a:a_ERROR:828230829687046155> | Impossible de récupérer les mèmes de <:reddit:767062345422864394> [Reddit](https://reddit.com/r/animemes)! Veuillez le signaler au propriétaire du bot. L\'API est peut-être en panne ou il peut y avoir des modifications sur l\'API elle-même.');
+        return message.channel.send('❌ | Impossible de récupérer les mèmes de <:reddit:767062345422864394> [Reddit](https://reddit.com/r/animemes)! Veuillez le signaler au propriétaire du bot. L\'API est peut-être en panne ou il peut y avoir des modifications sur l\'API elle-même.');
       };
 
       const data = memes.first()
