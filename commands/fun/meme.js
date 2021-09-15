@@ -23,7 +23,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setImage(data.url)
       .setAuthor(data.title, null, data.postLink)
       .setFooter(`${data.subreddit}:Meme | \©️${new Date().getFullYear()} Horizongame`)
