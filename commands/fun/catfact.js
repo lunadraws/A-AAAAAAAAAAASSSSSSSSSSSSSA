@@ -26,7 +26,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setThumbnail('https://i.imgur.com/KeitRew.gif')
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setDescription(data.data[0].fact)
       .setFooter(`Catfact | \©️${new Date().getFullYear()} HorizonGame`)
     );
