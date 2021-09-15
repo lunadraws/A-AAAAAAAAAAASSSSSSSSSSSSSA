@@ -31,7 +31,7 @@ module.exports = {
     };
 
     const embed = new MessageEmbed()
-    .setColor('RED')
+    .setColor('#3A871F')
     .setFooter(`Anischedule Watchlist | \©️${new Date().getFullYear()} HorizonGame`)
 
     const anischedch = message.guild.channels.cache.get(doc.channelID);
@@ -78,7 +78,7 @@ module.exports = {
 
       const pages = new Page(descriptions.map((d,i) => {
         return new MessageEmbed()
-        .setColor('GREY')
+        .setColor('#3A871F')
         .setDescription(d)
         .setTitle(`Current Anischedule Subscription (${entries.length} entries!)`)
         .setFooter([
