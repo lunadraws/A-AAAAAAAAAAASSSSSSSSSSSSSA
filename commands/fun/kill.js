@@ -19,7 +19,7 @@ module.exports = {
 
     const url = client.images.kill();
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setImage(url)
     .setFooter(`Kill | \©️${new Date().getFullYear()} HorizonGame`);
 
