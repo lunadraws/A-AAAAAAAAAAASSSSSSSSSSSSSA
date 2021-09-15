@@ -15,7 +15,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setDescription(`${message.author} a commencé à pleurer!`)
       .setImage(client.images.cry())
       .setFooter(`Cry | \©️${new Date().getFullYear()} HorizonGame`)
