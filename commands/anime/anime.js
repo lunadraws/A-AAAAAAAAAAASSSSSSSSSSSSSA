@@ -40,7 +40,7 @@ module.exports = {
 
     if (!data){
       return message.channel.send([
-        `\\<a:a_ERROR:828230829687046155> **${message.author.tag}**, Aucun résultat n'a été trouvé pour **${query}**`,
+        `\\❌ **${message.author.tag}**, Aucun résultat n'a été trouvé pour **${query}**`,
         'Si vous pensez que cet anime existe, essayez les méthodes suivantes:',
         '\u2000•\u2000Essayez les noms alternatifs (par exemple anglais, natif, romanisé)',
         '\u2000•\u2000Incluez le numéro de saison (le cas échéant)',
@@ -48,7 +48,7 @@ module.exports = {
       ])
     } else if (data === 'TIMEOUT'){
       return message.channel.send([
-        `\\<a:a_ERROR:828230829687046155> **${message.author.tag}**, MyAnimeList a mis plus de temps à répondre.`,
+        `\\❌ **${message.author.tag}**, MyAnimeList a mis plus de temps à répondre.`,
         'Veuillez réessayer plus tard, cela peut être dû à un temps d\'arrêt du serveur.'
       ])
     };
