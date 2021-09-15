@@ -26,7 +26,7 @@ module.exports = {
 
     const search = args.join(' ') || 'Yoshitsugu Matsuoka';
 
-    const embed = new MessageEmbed().setColor(message.guild.me.displayHexColor)
+    const embed = new MessageEmbed().setColor('#3A871F')
     .setFooter(`Requête Seiyuu avec AL | \©️${new Date().getFullYear()} HorizonGame`)
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
     .setDescription([
@@ -39,7 +39,7 @@ module.exports = {
     let res = await client.anischedule.fetch(seiyuu, { search });
 
     if (res.errors && res.errors.some(e => e.message !== 'Not Found.')){
-      embed.setColor(message.guild.me.displayHexColor)
+      embed.setColor('#3A871F')
       .setAuthor('Erreur de réponse','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
       .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
       .setDescription([
@@ -52,7 +52,7 @@ module.exports = {
     };
 
     if (res.errors && res.errors.some(e => e.message === 'Not Found.')){
-      embed.setColor(message.guild.me.displayHexColor)
+      embed.setColor('#3A871F')
       .setAuthor('Personne n\'est trouvé','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
       .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
       .setDescription([
@@ -68,7 +68,7 @@ module.exports = {
 
     const elapsed = Date.now() - message.createdTimestamp;
 
-    embed.setColor(message.guild.me.displayHexColor)
+    embed.setColor('#3A871F')
     .setThumbnail(res.data.Staff.image.large)
     .setAuthor([
       res.data.Staff.name.full,
