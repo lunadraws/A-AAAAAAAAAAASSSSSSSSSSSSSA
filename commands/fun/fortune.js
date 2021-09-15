@@ -15,7 +15,7 @@ module.exports = {
   ],
   run: (client, message) => message.channel.send(
     new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setAuthor(message.author.tag)
     .setFooter(`Fortune | \©️${new Date().getFullYear()} HorizonGame`)
     .setDescription(fortunes[Math.floor(Math.random() * fortunes.length)])
