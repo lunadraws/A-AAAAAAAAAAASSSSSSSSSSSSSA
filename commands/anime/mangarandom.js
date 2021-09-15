@@ -30,7 +30,7 @@ module.exports = {
 
     const { errors , data } = await client.anischedule.fetch(`query ($id: Int) { Media(id: $id){ siteUrl id idMal isAdult format startDate { year month day } chapters volumes genres studios(isMain:true){ nodes{ name siteUrl } } coverImage{ large color } description title { romaji english native userPreferred } } }`, { id });
 
-    const embed = new MessageEmbed().setColor(message.guild.me.displayHexColor)
+    const embed = new MessageEmbed().setColor('#3A871F')
     .setFooter(`Recommandation aléatoires | \©️${new Date().getFullYear()} HorizonGame`);
 
     // If errored due to ratelimit error
@@ -50,7 +50,7 @@ module.exports = {
         embed.setAuthor('Oops! Un bug sauvage 🐛 est apparu!', 'https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
         .setDescription([
           `**${message.member.displayName}**, cette erreur n'était pas censée se produire.\n\n`,
-          `Veuillez contacter **FloxYTB#9674** pour une solution rapide.\n`,
+          `Veuillez contacter **Nettles#9674** pour une solution rapide.\n`,
         ].join(''))
       );
     };
@@ -68,7 +68,7 @@ module.exports = {
     };
 
     return message.channel.send(
-      embed.setColor(data.Media.coverImage.color || 'GREY')
+      embed.setColor('#3A871F')
       .setAuthor([
         text.truncate(data.Media.title.romaji || data.Media.title.english || data.Media.title.native),
         client.anischedule.info.mediaFormat[data.Media.format]
