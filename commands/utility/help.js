@@ -27,6 +27,11 @@ module.exports = {
          '<:search:885115865417261066>』**__Informations__**',
          "> `help-mod`, `help-eco`, `help-anime`, `help-antiraid`, `help-invite`, `help-level`, `help-music`, `help-fun`, `help-utile`, `help-config`"
        )
+      .addField(
+         '<:search:885115865417261066>』**__Informations__**',
+         "[Invite moi](https://discordapp.com/oauth2/authorize?client_id=884131896919994458&scope=bot&permissions=2146958847) | [Support](https://discord.gg/eCDp4jRvWu) | [Top.gg](https://top.gg/bot/688407554904162365/vote) | [z-bdfd](https://zbdfd.ml/dc) | [Youtube](https://youtube.com/c/NettleYTBBDFD)"
+       )
+
          
        
        
