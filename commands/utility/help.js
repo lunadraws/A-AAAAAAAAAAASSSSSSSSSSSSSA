@@ -27,10 +27,7 @@ module.exports = {
          '<:emoji_19:885087722828611625>』**__Informations__**',
          "> `help-mod`, `help-eco`, `help-anime`, `help-antiraid`, `help-invite`, `help-level`, `help-music`, `help-fun`, `help-utile`, `help-config`"
        )
-      .addField(
-         '<:level:885078162613108746>』**__Liens__**',
-         "[Invite moi](https://discordapp.com/oauth2/authorize?client_id=884131896919994458&scope=bot&permissions=2146958847) | [Support](https://discord.gg/eCDp4jRvWu) | [Top.gg](https://top.gg/bot/688407554904162365/vote) | [Z-bdfd](https://zbdfd.ml/dc) | [Youtube](https://youtube.com/c/NettleYTBBDFD)"
-       )
+      
       .addField(
         '<:search:885115865417261066>』__**animé**__',
         "> `alprofile`, `anime`, `animeme`, `aniquote`, `anirandom`, `character`, `discover`, `hanime`, `malprofile`, `manga`, `mangarandom`, `nextairdate`, `schedule`, `seiyuu`, `upcoming`, `waifu`"
@@ -79,6 +76,11 @@ module.exports = {
     .addField(
         '<:money:885078204476456980>』__**économie**__',
         "> `addcredits`, `bal`, `bank`, `beg`, `bet`, `creditslb`, `daily`, `deposit`, `find`, `game`, `register`, `pay`, `withdraw`"
+       )
+
+    .addField(
+         '<:level:885078162613108746>』**__Liens__**',
+         "[Invite moi](https://discordapp.com/oauth2/authorize?client_id=884131896919994458&scope=bot&permissions=2146958847) | [Support](https://discord.gg/eCDp4jRvWu) | [Top.gg](https://top.gg/bot/688407554904162365/vote) | [Z-bdfd](https://zbdfd.ml/dc) | [Youtube](https://youtube.com/c/NettleYTBBDFD)"
        )
          
        
