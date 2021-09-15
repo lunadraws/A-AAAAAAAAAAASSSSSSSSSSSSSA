@@ -65,7 +65,7 @@ module.exports = {
     doc.save()
     .then(() => message.channel.send(
       new MessageEmbed()
-      .setColor(res.sort((A,B) => B.id - A.id)[0].coverImage.color)
+      .setColor('#3A871F')
       .setThumbnail(res.sort((A,B) => B.id - A.id)[0].coverImage.large)
       .setAuthor('Adding to watchlist')
       .setFooter(`Watch | \©️${new Date().getFullYear()} HorizonGame`)
@@ -114,7 +114,7 @@ module.exports = {
 
         return {
           name: '\u200b', value: [
-            ['\\⚠️ Failed to add', '<a:animatedcheck:758316325025087500> Successfully added'][Number(filter)],
+            ['\\⚠️ Failed to add', '✔️ Successfully added'][Number(filter)],
             `[**${entry.title.romaji || entry.title.english || entry.title.native}**](${entry.siteUrl})`,
             `\n${reason}`
           ].join(' ')
