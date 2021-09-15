@@ -42,7 +42,7 @@ module.exports = {
 
     const pages = new Pages(res.videos.splice(0,10).map((entry, i, a) =>
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setTitle(entry.name)
       .setURL(`https://hanime.tv/videos/hentai/${entry.slug}`)
       .setImage(reviseURL(entry.poster_url))
