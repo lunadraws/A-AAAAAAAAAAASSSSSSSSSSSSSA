@@ -32,7 +32,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setFooter(`Horoscope | \©️${new Date().getFullYear()} HorizonGame`)
       .setAuthor(signs[sign.toLowerCase()] + ' ' + data.sunsign || sign)
       .setDescription(data.horoscope.replace('(c) Kelli Fox, l\'astrologue, http://new.theastrologer.com', ''))
