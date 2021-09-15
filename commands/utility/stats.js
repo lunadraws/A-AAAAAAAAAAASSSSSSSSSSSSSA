@@ -39,37 +39,36 @@ module.exports = {
       .setURL('https://zbdfd.ml/')
       .setTitle(`${client.user.username}v4.0.0`)
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Serving ${client.guilds.cache.size} servers`},{
-          name: '<:emoji_19:885087722828611625>\u2000MESSAGES', value: [
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━', ,{
+          name: '<:emoji_19:885087722828611625>\u2000__**MESSAGES**__', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
             `Cached:\u2000\u2000**${round(client.channels.cache.filter(x => x.send).reduce((acc, cur) => acc + cur.messages.cache.size, 0))}**`
           ].join('\n'), inline: true,
         },{
-          name: '<:user:885128850806288385>\u2000USERS', value: [
-            `Total:\u2000\u2000**${round(client.guilds.cache.reduce((acc, cur) => acc + cur.memberCount, 0))}**`,
-            `Cached:\u2000\u2000**${round(client.users.cache.size)}**`,
-            `Here:\u2000\u2000**${text.commatize(message.guild.memberCount)}**`
+          name: '<:user:885128850806288385>\u2000**__INFOS__**', value: [
+            `Users:\u2000\u2000**${round(client.guilds.cache.reduce((acc, cur) => acc + cur.memberCount, 0))}**`,
+            **Servers:\u2000\u2000${client.guilds.cache.size}**`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
-          name: '<:search:885115865417261066>\u2000COMMANDS', value: [
+          name: '<:search:885115865417261066>\u2000__**COMMANDS**__', value: [
             `Total:\u2000\u2000**230**`,
             `Times accessed:\u2000\u2000**${round(client.commands.registers.reduce((acc,cur) => acc + cur.used, 0))}**`,
             `Most used:\u2000\u2000**\`${top_command.name} [${round(top_command.used)}]\`**`
           ].join('\n'), inline: true,
         },{
-          name: '<:config:885078094426279977>\u2000MEMORY', value: [
+          name: '<:config:885078094426279977>\u2000**__MEMORY__**', value: [
             `Total (*heap*):\u2000\u2000[**\` ${(heapTotal / 1024 / 1024).toFixed(0)} MB \`**]`,
             `Used (*heap*):\u2000\u2000[**\` ${(heapUsed / 1024 / 1024).toFixed(0)} MB \`**]`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
-          name: '<:lock:885096669958512641>\u2000SYSTEM', value: [
+          name: '<:lock:885096669958512641>\u2000**__SYSTEM__**', value: [
             `OS:\u2000\u2000**${process.platform} ${release}**`,
             `DiscordJS:\u2000\u2000**v13**`,
             `Node:\u2000\u2000**16.x**`,
             `CPU:\u2000\u2000**${cpus()[0].model}**`,
           ].join('\n'),
-        },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Uptime:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.`}
+        },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`**__Uptime__**:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.`}
       ]).setFooter(`Bot Status | \©️${new Date().getFullYear()} HorizonGame`)
     );
   }
