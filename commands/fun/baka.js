@@ -18,7 +18,7 @@ module.exports = {
 
     const url = client.images.baka();
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setImage(url)
     .setFooter(`baka | \©️${new Date().getFullYear()} HorizonGame`);
 
