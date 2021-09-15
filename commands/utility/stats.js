@@ -67,8 +67,8 @@ module.exports = {
             `> Node:\u2000\u2000**16.x**`,
             `> CPU:\u2000\u2000**${cpus()[0].model}**`,
           ].join('\n'),
-        },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Uptime:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.}
-      ]).setFooter(`Stats | \©️${new Date().getFullYear()} HorizonGame`)
+        },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Uptime:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.`}
+      ]).setFooter(`\©️${new Date().getFullYear()} Mai`)
     );
   }
 };
