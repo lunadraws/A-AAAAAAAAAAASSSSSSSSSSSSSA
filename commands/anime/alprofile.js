@@ -26,7 +26,7 @@ module.exports = {
 
     if (!query){
       client.commands.cooldowns.get(this.name).users.delete(message.author.id);
-      return message.channel.send('\\<:error:885075491416047616> Veuillez inclure l\'utilisateur à trouver sur Anilist!');
+      return message.channel.send('\\❌ Veuillez inclure l\'utilisateur à trouver sur Anilist!');
     };
 
     const response = await client.anischedule.fetch(userquery, { search: query });
@@ -34,13 +34,13 @@ module.exports = {
     if (response.errors){
       let err;
       if (response.errors[0].status === 404){
-        err = `\\<:error:885075491416047616> Je ne trouve pas **${query}** sur Anilist!`;
+        err = `\\❌ Je ne trouve pas **${query}** sur Anilist!`;
       } else if (response.errors.some(x => x.status >= 500)){
-        err = `\\<:error:885075491416047616> Anilist n'a pas pu être atteint pour le moment! Veuillez réessayer plus tard. [err ${response.errors[0].status}]`;
+        err = `\\❌ Anilist n'a pas pu être atteint pour le moment! Veuillez réessayer plus tard. [err ${response.errors[0].status}]`;
       } else if (response.errors.some(x => x.status >= 400)){
-        err =`\`<:error:885075491416047616> CLIENT_ERR \`: HorizonGame a tenté d\'envoyer une requête invalidée à AniList. Veuillez contacter mon développeur pour corriger ce bug.`;
+        err =`\`❌ CLIENT_ERR \`: HorizonGame a tenté d\'envoyer une requête invalidée à AniList. Veuillez contacter mon développeur pour corriger ce bug.`;
       } else {
-        err = `\\<:error:885075491416047616> Un problème est survenu. Veuillez réessayer plus tard`;
+        err = `\\❌ Un problème est survenu. Veuillez réessayer plus tard`;
       };
       return message.channel.send(err);
     };
