@@ -16,7 +16,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setDescription(`${message.author} smugs.`)
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setImage(client.images.smug())
       .setFooter(`Smug | \©️${new Date().getFullYear()} horizonGame`)
     );
