@@ -24,7 +24,7 @@ module.exports = {
       .setFooter(`help | \©️${new Date().getFullYear()} HorizonGame`)
          
       .addField(
-         '<:search:885115865417261066>』**__Informations__**',
+         '<:emoji_19:885087722828611625>』**__Informations__**',
          "> `help-mod`, `help-eco`, `help-anime`, `help-antiraid`, `help-invite`, `help-level`, `help-music`, `help-fun`, `help-utile`, `help-config`"
        )
       .addField(
