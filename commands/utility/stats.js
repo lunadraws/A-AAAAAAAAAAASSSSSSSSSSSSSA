@@ -37,9 +37,9 @@ module.exports = {
       new MessageEmbed()
       .setColor('#3A871F')
       .setURL('https://zbdfd.ml/')
-      .setTitle(`${client.user.username}v${version}`)
+      .setTitle(`${client.user.username}v4.0.0`)
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Serving ${client.guilds.cache.size} servers\n\*`},{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Serving ${client.guilds.cache.size} servers`},{
           name: '📧\u2000MESSAGES', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
