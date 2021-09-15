@@ -47,7 +47,7 @@ module.exports = {
         },{
           name: '<:user:885128850806288385>\u2000**__INFOS__**', value: [
             `> Users:\u2000\u2000**${round(client.guilds.cache.reduce((acc, cur) => acc + cur.memberCount, 0))}**`,
-            `> Servers:\u2000\u2000$**{client.guilds.cache.size}**`
+            `> Servers:\u2000\u2000**${client.guilds.cache.size}**`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
           name: '<:search:885115865417261066>\u2000__**COMMANDS**__', value: [
