@@ -17,7 +17,7 @@ module.exports = {
     return message.channel.send(
       new MessageEmbed()
       .setDescription(`${message.author} vient de se suicider. Horrible.`)
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setImage(client.images.suicide())
       .setFooter(`Suicide | \©️${new Date().getFullYear()} HorizonGame`)
     );
