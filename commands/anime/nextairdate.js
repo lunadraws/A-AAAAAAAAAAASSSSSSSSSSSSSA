@@ -33,7 +33,7 @@ module.exports = {
     const res = await client.anischedule.fetch(query, variables);
 
     const embed = new MessageEmbed()
-    .setColor('RED')
+    .setColor('#3A871F')
     .setThumbnail('https://i.imgur.com/qkBQB8V.png')
     .setFooter(`Airdate Query with AL | \©️${new Date().getFullYear()} HorizonGame`);
 
@@ -71,7 +71,7 @@ module.exports = {
     } else if (variables.status){
       return message.channel.send(
         embed.setAuthor('',null)
-        .setColor(now.coverImage.color)
+        .setColor('#3A871F')
         .setThumbnail(now.coverImage.large)
         .setTitle(now.title.english || now.title.romaji || now.title.native)
         .setDescription([
@@ -90,7 +90,7 @@ module.exports = {
       );
     } else {
       return message.channel.send(
-        embed.setColor(now.coverImage.color || next.coverImage.color || later.coverImage.color )
+        embed.setColor('#3A871F')
         .setThumbnail(now.coverImage.large)
         .setAuthor(`Airs next\u2000|\u2000${now.title.english || now.title.romaji || now.title.native}.`, null, now.siteUrl)
         .setDescription([
