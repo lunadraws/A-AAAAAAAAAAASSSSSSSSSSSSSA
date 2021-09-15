@@ -37,9 +37,8 @@ module.exports = {
       new MessageEmbed()
       .setColor('#3A871F')
       .setURL('https://zbdfd.ml/')
-      .setTitle('**__stats__**')
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'HorizonGame est un bot Discord entièrement personnalisable qui ne cesse de croître. Elle est livrée avec une variété de commandes et une multitude de paramètres pouvant être adaptés aux besoins spécifiques de votre serveur. Elle a été mise en ligne pour la première fois le  14 Mars 2020.'},{
+        {
           name: '<:emoji_19:885087722828611625>\u2000__**MESSAGES**__', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
