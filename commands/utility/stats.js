@@ -39,7 +39,7 @@ module.exports = {
       .setURL('https://zbdfd.ml/')
       .setTitle(`${client.user.username}v${version}`)
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Serving ${client.guilds.cache.size} servers\n\`},{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`HorizonGame\u2000\u2000\n\*Serving ${client.guilds.cache.size} servers\n\*`},{
           name: '📧\u2000MESSAGES', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
