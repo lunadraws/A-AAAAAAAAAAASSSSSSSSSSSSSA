@@ -18,7 +18,7 @@ module.exports = {
 
     const url = client.images.smile();
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setImage(url)
     .setFooter(`Smile | \©️${new Date().getFullYear()} HorizonGame`);
 
