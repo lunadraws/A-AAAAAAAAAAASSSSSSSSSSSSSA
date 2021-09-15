@@ -19,7 +19,7 @@ module.exports = {
     const url = client.images.lick();
     const disgust = client.images.disgust();
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setImage(url)
     .setFooter(`Lick | \©️${new Date().getFullYear()} HorizonGame`);
 
