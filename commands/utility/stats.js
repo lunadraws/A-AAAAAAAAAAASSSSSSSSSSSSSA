@@ -40,30 +40,30 @@ module.exports = {
       .setTitle(`${client.user.username}v4.0.0`)
       .addFields([
         {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Serving ${client.guilds.cache.size} servers`},{
-          name: '📧\u2000MESSAGES', value: [
+          name: '<:emoji_19:885087722828611625>\u2000MESSAGES', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
             `Cached:\u2000\u2000**${round(client.channels.cache.filter(x => x.send).reduce((acc, cur) => acc + cur.messages.cache.size, 0))}**`
           ].join('\n'), inline: true,
         },{
-          name: '👥\u2000USERS', value: [
+          name: '<:user:885128850806288385>\u2000USERS', value: [
             `Total:\u2000\u2000**${round(client.guilds.cache.reduce((acc, cur) => acc + cur.memberCount, 0))}**`,
             `Cached:\u2000\u2000**${round(client.users.cache.size)}**`,
             `Here:\u2000\u2000**${text.commatize(message.guild.memberCount)}**`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
-          name: '⭐\u2000COMMANDS', value: [
+          name: '<:search:885115865417261066>\u2000COMMANDS', value: [
             `Total:\u2000\u2000**230**`,
             `Times accessed:\u2000\u2000**${round(client.commands.registers.reduce((acc,cur) => acc + cur.used, 0))}**`,
             `Most used:\u2000\u2000**\`${top_command.name} [${round(top_command.used)}]\`**`
           ].join('\n'), inline: true,
         },{
-          name: '🧠\u2000MEMORY', value: [
+          name: '<:config:885078094426279977>\u2000MEMORY', value: [
             `Total (*heap*):\u2000\u2000[**\` ${(heapTotal / 1024 / 1024).toFixed(0)} MB \`**]`,
             `Used (*heap*):\u2000\u2000[**\` ${(heapUsed / 1024 / 1024).toFixed(0)} MB \`**]`
           ].join('\n'), inline: true,
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
-          name: '⚙️\u2000SYSTEM', value: [
+          name: '<:lock:885096669958512641>\u2000SYSTEM', value: [
             `OS:\u2000\u2000**${process.platform} ${release}**`,
             `DiscordJS:\u2000\u2000**v13**`,
             `Node:\u2000\u2000**16.x**`,
