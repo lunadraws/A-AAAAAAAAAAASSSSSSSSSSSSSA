@@ -13,7 +13,7 @@ module.exports = {
   run: async ( client, message ) => {
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setDescription(`${message.author} a commencé à danser!`)
       .setImage(client.images.dance())
       .setFooter(`dance | \©️${new Date().getFullYear()} HorizonGame`)
