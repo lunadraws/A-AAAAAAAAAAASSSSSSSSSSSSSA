@@ -63,7 +63,7 @@ module.exports = {
     doc.save()
     .then(() => message.channel.send(
       new MessageEmbed()
-      .setColor(res.sort((A,B) => B.id - A.id)[0].coverImage.color)
+      .setColor('#3A871F')
       .setThumbnail(res.sort((A,B) => B.id - A.id)[0].coverImage.large)
       .setAuthor('Removing from watchlist')
       .setFooter(`Unwatch | \©️${new Date().getFullYear()} HorizonGame`)
@@ -73,7 +73,7 @@ module.exports = {
         let value = '\u200b';
 
         if (tbd.includes(entry.id)){
-          value = `<a:animatedcheck:758316325025087500> Successfully removed [**${mediatitle}**](${entry.siteUrl})`;
+          value = `✔️ Successfully removed [**${mediatitle}**](${entry.siteUrl})`;
         } else {
           value = [
             `\\⚠️ Failed to remove [**${mediatitle}**](${entry.siteUrl})`,
