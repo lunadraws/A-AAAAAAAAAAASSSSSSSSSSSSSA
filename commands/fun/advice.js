@@ -24,7 +24,7 @@ module.exports = {
 
     return message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setTitle(data.slip.advice)
       .setFooter(`Advice | \©️${new Date().getFullYear()} HorizonGame`)
     );
