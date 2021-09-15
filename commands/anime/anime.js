@@ -59,7 +59,7 @@ module.exports = {
     const nsfwch = message.guild.channels.cache.filter(x => x.nsfw).map(x => x.toString());
 
     if (isHentai && message.channel.nsfw === false){
-      return message.channel.send(`\\<a:a_ERROR:828230829687046155> | **${message.author.tag}**, vous avez recherché \`Hentai\` sur une chaîne sfw!\n\nVotre requête, **${
+      return message.channel.send(`\\❌ | **${message.author.tag}**, vous avez recherché \`Hentai\` sur une chaîne sfw!\n\nVotre requête, **${
         query
       }**, a renvoyé un titre hentai de **${data.studios?.[0]}**. Veuillez essayer d'interroger les entrées hentai sur les chaînes nsfw${
         nsfwch.length ? ` tel que ${text.joinArray(nsfwch)}` : ''
