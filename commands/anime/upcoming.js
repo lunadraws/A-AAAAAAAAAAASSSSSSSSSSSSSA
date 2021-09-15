@@ -36,7 +36,7 @@ module.exports = {
     };
 
     const embed = new MessageEmbed()
-    .setColor('YELLOW')
+    .setColor('#3A871F')
     .setThumbnail('https://i.imgur.com/u6ROwvK.gif')
     .setDescription(`\u200B\n Fetching upcoming **${type || ' '}** anime from <:mal:767062339177676800> [MyAnimeList](https://myanimelist.net 'MyAnimeList Homepage').\n\u200B`)
     .setFooter(`Upcoming Anime Query with MAL\u2000|\u2000\©️${new Date().getFullYear()} HorizonGame`)
@@ -48,7 +48,7 @@ module.exports = {
     if (!res || res.error){
       res = res ? res : {};
 
-      embed.setColor('RED')
+      embed.setColor('#3A871F')
       .setAuthor('Response Error','https://cdn.discordapp.com/emojis/767062250279927818.png?v=1')
       .setDescription([
         `**${message.member.displayName}**, 'An unexpected error occured!'\n\n`,
@@ -78,7 +78,7 @@ module.exports = {
     for (const anime of descriptions){
       pages.add(
         new MessageEmbed()
-        .setColor('GREY')
+        .setColor('#3A871F')
         .setAuthor(`Upcoming Anime List\u2000|\u2000Type: ${type || 'ALL'}`)
         .setDescription(anime.join('\n\n'))
         .setFooter([
