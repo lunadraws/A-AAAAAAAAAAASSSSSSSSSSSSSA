@@ -15,7 +15,7 @@ module.exports = {
 
     const rep = await message.channel.send(
       new MessageEmbed()
-      .setColor(message.guild.me.displayHexColor)
+      .setColor('#3A871F')
       .setFooter(`Appuyez sur F pour payer le respect | \©️${new Date().getFullYear()} HorizonGame`)
       .setDescription(`${message.member} a payé leur respect${args.length ? ` a ${args.join(' ')}.` : ''}`)
     );
