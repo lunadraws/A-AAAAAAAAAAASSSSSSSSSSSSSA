@@ -68,7 +68,7 @@ module.exports = {
             `> CPU:\u2000\u2000**${cpus()[0].model}**`,
           ].join('\n'),
         },{value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:`Uptime:\u2000${moment.duration(client.uptime, 'ms').format('D [days,] H [hours, and] m [minutes]')}.}
-      ]).setFooter(`©️${new Date().getFullYear()} HorizonGame`)
+      ]).setFooter(`Stats | \©️${new Date().getFullYear()} HorizonGame`)
     );
   }
 };
