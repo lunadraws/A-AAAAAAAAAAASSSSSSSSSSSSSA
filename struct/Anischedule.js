@@ -97,7 +97,7 @@ module.exports = class Anischedule{
     }).join(' • ') || [];
 
     return new MessageEmbed()
-    .setColor(entry.media.coverImage.color || 'GREY')
+    .setColor('#3A871F')
     .setThumbnail(entry.media.coverImage.large)
     .setAuthor('HorizonGame AnimeAnnonce')
     .setTimestamp(date)
