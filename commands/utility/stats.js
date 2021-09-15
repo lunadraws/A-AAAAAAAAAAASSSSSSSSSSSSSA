@@ -39,7 +39,7 @@ module.exports = {
       .setURL('https://zbdfd.ml/')
       .setTitle(`${client.user.username}v4.0.0`)
       .addFields([
-        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━'{
+        {value:'━━━━━━━━━━━━━━━━━━━━━━━━━━━━',name:'\u200b'},{
           name: '<:emoji_19:885087722828611625>\u2000__**MESSAGES**__', value: [
             `Sent:\u2000\u2000**${round(client.messages.sent)}**`,
             `Received:\u2000\u2000**${round(client.messages.received)}**`,
