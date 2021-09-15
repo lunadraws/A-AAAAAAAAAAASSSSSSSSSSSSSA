@@ -20,7 +20,7 @@ module.exports = {
     const baka = client.images.baka();
 
     const embed = new MessageEmbed()
-    .setColor(message.guild.me.displayHexColor)
+    .setColor('#3A871F')
     .setFooter(`Midfing | \©️${new Date().getFullYear()} HorizonGame`);
 
     if (!message.mentions.members.size){
