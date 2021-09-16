@@ -7,7 +7,7 @@ const text = require(`${process.cwd()}/util/string`);
 
 module.exports = {
   name: 'stats',
-  aliases: [ 'status', 'botstatus' ],
+  aliases: [ 'bi', 'botinfo' ],
   group: 'bot',
   description: 'Displays the status of the current bot instance.',
   clientPermissions: [ 'EMBED_LINKS', 'ATTACH_FILES' ],
