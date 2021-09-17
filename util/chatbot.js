@@ -24,12 +24,13 @@ module.exports = async message => {
 
   // Check if the user has input other than mention
   if (!input.split(/ +/).filter(Boolean).length){
+    return message.channel.send(`How may i help you?`, { replyTo: message })
     .then(() => { return { success: true }; })
     .catch(() => { return { success: false }; });
   };
 
   // Start typing
-  
+  message.channel.startTyping();
 
   // Get a response from the bot via api
   const res = await fetch(`http://api.brainshop.ai/get?bid=${chatbot_id}&key=${chatbot_key}&uid=${message.author.id}&msg=${encodeURIComponent(input)}`)
@@ -47,7 +48,7 @@ module.exports = async message => {
       return { success: true };
     })
     .catch(() => {
-     
+      message.channel.stopTyping();
       return { success: false };
     });
   };
@@ -55,11 +56,11 @@ module.exports = async message => {
   // send the response
   return message.channel.send(res.cnt , { replyTo: message })
   .then(() => {
-    
+    message.channel.stopTyping();
     return { success: true };
   })
   .catch(() => {
-    
+    message.channel.stopTyping();
     return { success: false };
   });
 };
