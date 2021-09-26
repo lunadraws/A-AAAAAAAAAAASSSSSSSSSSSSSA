@@ -23,26 +23,7 @@ module.exports = {
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
     .setColor('#3A871F');
 
-    if (!isActive){
-      return message.channel.send(
-        embed.setDescription([
-          `**${message.member.displayName}**, XP est actuellement désactivé sur ce serveur.\n`,
-          `Si vous êtes l'administrateur du serveur, vous pouvez l'activer en tapant \`${client.config.prefix}xptoggle\`.`,
-        ].join('\n'))
-        .setAuthor('Systèmes XP désactivés','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-      );
-    };
-
-    if (exceptions.includes(message.channel.id)){
-      return message.channel.send(
-        embed.setDescription([
-          `**${message.member.displayName}**, XP est actuellement désactivé dans cette chaîne.\n`,
-          `Pour voir quels canaux sont désactivés par XP, utilisez la commande \`${client.config.prefix}nonxpchannels\``,
-          `Si vous êtes l'administrateur du serveur, vous pouvez le réactiver ici en tapant \`${client.config.prefix}xpenable #${message.channel.name}\``,
-        ].join('\n'))
-        .setAuthor('Chaîne sur liste noire','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-      );
-    };
+    
 
     return profile.find({ 'data.xp.id': message.guild.id }, async (err, docs) => {
       if (err) {
