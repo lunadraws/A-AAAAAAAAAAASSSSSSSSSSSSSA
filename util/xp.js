@@ -39,16 +39,16 @@ async function experience(message, command_executed, execute){
   // Check if the xp is disabled on the server
 
   if (!gs){
-    return Promise.resolve({ xpAdded: false, reason: 'DATABASE_NOT_FOUND' })
+    return Promise.resolve({ xpAdded: true, reason: 'DATABASE_NOT_FOUND' })
   };
 
   if (!gs.xp.isActive){
-    return Promise.resolve({ xpAdded: false, reason: 'DISABLED_ON_GUILD' });
+    return Promise.resolve({ xpAdded: true, reason: 'DISABLED_ON_GUILD' });
   };
 
   // Check if the xp is disabled on the channel
   if (gs.xp.exceptions.includes(message.channel.id)){
-    return Promise.resolve({ xpAdded: false, reason: 'DISABLED_ON_CHANNEL' });
+    return Promise.resolve({ xpAdded: true, reason: 'DISABLED_ON_CHANNEL' });
   };
 
   // Check if user has recently talked
