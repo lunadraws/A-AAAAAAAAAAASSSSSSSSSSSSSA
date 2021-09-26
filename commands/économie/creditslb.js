@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const text = require('../../util/string');
-const profile = require('../../models/Profile');
+
 
 module.exports = {
   name: 'creditslb',
@@ -24,13 +24,7 @@ module.exports = {
 
     
 
-    return profile.find({ 'data.xp.id': message.guild.id }, async (err, docs) => {
-      if (err) {
-        return message.channel.send(
-          embed.setAuthor('Erreur de la base de données','https://cdn.discordapp.com/emojis/767790611381223454.gif?size=4096')
-          .setDescription('Le fournisseur de base de données de HorizonGame a répondu avec une erreur: ' + err.name)
-        );
-      };
+   
 
       docs = docs.map(x => { return { id: x._id, wallet: x.data.economy.wallet, bank: x.data.economy.bank};})
       .sort((A,B) => ((B.wallet || 0) + (B.bank || 0)) - ((A.wallet || 0) + (A.bank || 0))) // Arrange by credits, descending.
