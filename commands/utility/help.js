@@ -80,7 +80,7 @@ module.exports = {
 
     .addField(
          '<:level:885078162613108746>』**__Liens__**',
-         "[Invite moi](https://discordapp.com/oauth2/authorize?client_id=884131896919994458&scope=bot&permissions=2146958847) | [Support](https://discord.gg/eCDp4jRvWu) | [Top.gg](https://top.gg/bot/688407554904162365/vote) | [Z-bdfd](https://zbdfd.ml/dc) | [Youtube](https://youtube.com/c/NettleYTBBDFD)"
+         "[Invite moi](https://discord.com/oauth2/authorize?client_id=688407554904162365&scope=bot&permissions=2146958847) | [Support](https://discord.gg/eCDp4jRvWu) | [Top.gg](https://top.gg/bot/688407554904162365/vote) | [Z-bdfd](https://zbdfd.ml/dc) | [Youtube](https://youtube.com/c/NettleYTBBDFD)"
        )
          
        
