@@ -83,7 +83,20 @@ module.exports = class GuildProfile{
       }
     };
 
-    
+    this.xp = {
+
+      /**
+      * Whether the xp system is active on the guild
+      * @type {Boolean}
+      */
+      isActive: data.xp.isActive,
+
+      /**
+      * The channel IDs to blacklist from xp system.
+      * @type {string[]}
+      */
+      exceptions: data.xp.exceptions
+    };
 
     /**
     * Role IDs bound to specific bot function.
