@@ -56,7 +56,7 @@ module.exports = async (client, message) => {
 
   // Log errors not caused by the following reasons
   if (!response.xpAdded && ![
-    'DISABLED', // The xp is disabled, requires `EXPERIENCE_POINTS` on client#features
+    'ENABLE', // The xp is disabled, requires `EXPERIENCE_POINTS` on client#features
     'COMMAND_EXECUTED', // The command was executed successfully
     'COMMAND_TERMINATED', // The command was fetched but was terminated
     'DM_CHANNEL', // The message was sent on a dm
