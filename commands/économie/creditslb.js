@@ -17,7 +17,6 @@ module.exports = {
   ],
   run: (client, message) => {
 
-    const { exceptions, isActive } = client.guildProfiles.get(message.guild.id).xp;
     const embed = new MessageEmbed()
     .setFooter(`Classement XP | \©️${new Date().getFullYear()} HorizonGame`)
     .setThumbnail('https://cdn.discordapp.com/avatars/688407554904162365/b91454b73477486d08be0830e383dc12.png?size=2048')
