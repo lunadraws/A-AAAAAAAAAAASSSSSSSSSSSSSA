@@ -20,7 +20,7 @@ module.exports = {
     quantity = Math.round(quantity);
 
     if (!quantity || quantity < 2 || quantity > 100){
-      return message.channel.send(`<:cancel:767062250279927818> | ${message.author}, Please provide the quantity of messages to be deleted which must be greater than two (2) and less than one hundred (100)`);
+      return message.channel.send(`<:emoji_17:885086787700154388> | ${message.author}, Please provide the quantity of messages to be deleted which must be greater than two (2) and less than one hundred (100)`);
     };
 
     return message.channel.bulkDelete(quantity, true)
