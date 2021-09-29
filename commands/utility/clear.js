@@ -7,7 +7,7 @@ module.exports = {
   guildOnly: true,
   permissions: [ 'MANAGE_MESSAGES' ],
   clientPermissions: [ 'MANAGE_MESSAGES', 'EMBED_LINKS' ],
-  group: 'utility',
+  group: 'core',
   description: 'Delete messages from this channel. Will not delete messages older than two (2) weeks.',
   parameters: [ 'Quantity of Message' ],
   examples: [
