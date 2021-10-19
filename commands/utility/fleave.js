@@ -22,16 +22,5 @@ module.exports = {
       return message.channel.send(`\\❌ | ${message.author}, guild **${id}** does not exist on your cache`)
     };
 
-    return guild.channels.cache.filter(c =>
-      c instanceof TextChannel &&
-     
-    )).send(
-      new MessageEmbed()
-      .setColor('GREEN')
-      .setTitle(`👋 My developer has requested that I leave ${guild.name}!`)
-      .setDescription(`Reason:\n${reason.join(' ') || 'Unspecified'}`)
-    ).then(() => guild.leave())
-    .then(() => message.channel.send(`\\✔️ Sucessfully left the guild **${guild.name}**`))
-    .catch(() => message.channel.send(`\\❗ Could not perform the operation.`));
-  }
+   
 };
