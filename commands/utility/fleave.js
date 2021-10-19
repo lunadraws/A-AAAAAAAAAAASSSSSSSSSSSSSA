@@ -24,7 +24,7 @@ module.exports = {
 
     return guild.channels.cache.filter(c =>
       c instanceof TextChannel &&
-      .send(
+      send(
       new MessageEmbed()
       .setColor('RED')
       .setTitle(`👋 My developer has requested that I leave ${guild.name}!`)
