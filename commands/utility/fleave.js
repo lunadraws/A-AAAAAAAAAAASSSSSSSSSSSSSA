@@ -4,7 +4,7 @@ module.exports = {
   name: 'fleave',
   aliases: [ 'forceleave', 'leaveguild', 'removeguild', 'leaveserver' ],
   ownerOnly: true,
-  group: 'utility',
+  group: 'core',
   description: 'Force Mai to leave a server',
   parameters: [ 'server ID', 'Reason' ],
   examples: [
