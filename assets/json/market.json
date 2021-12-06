@@ -1,8 +1,8 @@
 [
     {
     "id": 1,
-    "name": "**__Default background__**",
-    "description": "`Default background for profile command.`",
+    "name": "Default background",
+    "description": "Default background for profile command.",
     "type": "background",
     "deletable": false,
     "giftable": false,
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "name": "**__Default Pattern__**",
-    "description": "`Default pattern for profile command.`",
+    "name": "Default Pattern",
+    "description": "Default pattern for profile command.",
     "type": "pattern",
     "deletable": false,
     "giftable": false,
@@ -25,8 +25,8 @@
   },
   {
     "id": 3,
-    "name": "**__Midas' Golden Wreath__**",
-    "description": "`Rare profile wreath.`",
+    "name": "Midas' Golden Wreath",
+    "description": "Rare profile wreath.",
     "type": "wreath",
     "deletable": true,
     "giftable": true,
@@ -37,8 +37,8 @@
   },
   {
     "id": 4,
-    "name": "**__Bronze Wreath__**",
-    "description": "`Uncommon profile wreath.`",
+    "name": "Bronze Wreath",
+    "description": "Uncommon profile wreath.",
     "type": "wreath",
     "deletable": true,
     "giftable": true,
@@ -49,8 +49,8 @@
   },
   {
     "id": 5,
-    "name": "**__Green Wreath__**",
-    "description": "`Uncommon profile wreath.`",
+    "name": "Green Wreath",
+    "description": "Uncommon profile wreath.",
     "type": "wreath",
     "deletable": true,
     "giftable": true,
@@ -61,8 +61,8 @@
   },
   {
     "id": 6,
-    "name": "**__Common Wreath__**",
-    "description": "`Common profile wreath.`",
+    "name": "Common Wreath",
+    "description": "Common profile wreath.",
     "type": "wreath",
     "deletable": true,
     "giftable": true,
@@ -73,8 +73,8 @@
   },
   {
     "id": 7,
-    "name": "**__Dark anime scenery__**",
-    "description": "`Uncommon Profile background`",
+    "name": "Dark anime scenery",
+    "description": "Uncommon Profile background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -85,8 +85,8 @@
   },
   {
     "id": 8,
-    "name": "**__Sword Art Online__**",
-    "description": "`Rare Profile background`",
+    "name": "Sword Art Online",
+    "description": "Rare Profile background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -97,8 +97,8 @@
   },
   {
     "id": 9,
-    "name": "**__Memories__**",
-    "description": "`Rare Profile background`",
+    "name": "Memories",
+    "description": "Rare Profile background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -109,8 +109,8 @@
   },
   {
     "id": 10,
-    "name": "**__One for All__**",
-    "description": "`Super Rare Profile background`",
+    "name": "*One for All",
+    "description": "Super Rare Profile background",
     "type": "background",
     "deletable": true,
     "giftable": false,
@@ -121,8 +121,8 @@
   },
   {
     "id": 11,
-    "name": "**__Bunny Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Bunny Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -132,8 +132,8 @@
     }
   },{
     "id": 12,
-    "name": "**__Fairy Tail Emblem__**",
-    "description": "`Uncommon Profile Emblem`",
+    "name": "Fairy Tail Emblem",
+    "description": "Uncommon Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -143,8 +143,8 @@
     }
   },{
     "id": 13,
-    "name": "**__Ken Kaneki, Kagune__**",
-    "description": "`Uncommon Profile Background`",
+    "name": "Ken Kaneki, Kagune",
+    "description": "Uncommon Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -154,8 +154,8 @@
     }
   },{
     "id": 14,
-    "name": "**__Meliodas, Estarossa__**",
-    "description": "`Rare Profile Background`",
+    "name": "Meliodas, Estarossa,
+    "description": "Rare Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -165,8 +165,8 @@
     }
   },{
     "id": 15,
-    "name": "**__Ichigo Kurosaki__**",
-    "description": "`Uncommon Profile Background`",
+    "name": "Ichigo Kurosaki",
+    "description": "Uncommon Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -176,8 +176,8 @@
     }
   },{
     "id": 16,
-    "name": "**__Blood__**",
-    "description": "`Rare Profile Background`",
+    "name": "Blood",
+    "description": "Rare Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -187,8 +187,8 @@
     }
   },{
     "id": 17,
-    "name": "**__Obito and Madara Uchiha__**",
-    "description": "`Rare Profile Background`",
+    "name": "Obito and Madara Uchiha",
+    "description": "Rare Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -198,8 +198,8 @@
     }
   },{
     "id": 18,
-    "name": "**__Ash-Greninja VS Mega Charizard X__**",
-    "description": "`Uncommon Profile Background`",
+    "name": "Ash-Greninja VS Mega Charizard X",
+    "description": "Uncommon Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -209,8 +209,8 @@
     }
   },{
     "id": 19,
-    "name": "**__Sage of Six__**",
-    "description": "`Uncommon Profile Background`",
+    "name": "Sage of Six",
+    "description": "Uncommon Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -220,8 +220,8 @@
     }
   },{
     "id": 20,
-    "name": "**__Rin Okumura__**",
-    "description": "`Rare Profile Background`",
+    "name": "Rin Okumura",
+    "description": "Rare Profile Background",
     "type": "background",
     "deletable": true,
     "giftable": true,
@@ -232,8 +232,8 @@
 
   },{
     "id": 21,
-    "name": "**__Monkey D. Ruffie__**",
-    "description": "`Rare Profile Emblem`",
+    "name": "Monkey D. Ruffie",
+    "description": "Rare Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -243,8 +243,8 @@
     }
   },{
     "id": 22,
-    "name": "**__Nezuko__**",
-    "description": "`Uncommon Profile Emblem`",
+    "name": "Nezuko",
+    "description": "Uncommon Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -254,8 +254,8 @@
     }
   },{
     "id": 23,
-    "name": "**__2turu__**",
-    "description": "`Rare Profile Emblem`",
+    "name": "2turu",
+    "description": "Rare Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -265,8 +265,8 @@
     }
   },{
     "id": 24,
-    "name": "**__PotatoGirl__**",
-    "description": "`Rare Profile Emblem`",
+    "name": "PotatoGirl",
+    "description": "Rare Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -276,8 +276,8 @@
     }
       },{
     "id": 25,
-    "name": "**__Ban__**",
-    "description": "`Rare Profile Emblem`",
+    "name": "Ban",
+    "description": "Rare Profile Emblem",
     "type": "emblem",
     "deletable": true,
     "giftable": true,
@@ -288,8 +288,8 @@
  
   },{
     "id": 26,
-    "name": "**__Cat Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Cat Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -299,8 +299,8 @@
     }
   },{
     "id": 27,
-    "name": "**__Kawaii Bear Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Kawaii Bear Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -310,8 +310,8 @@
     }
   },{
     "id": 28,
-    "name": "**__Stars Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Stars Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -322,8 +322,8 @@
   
   },{
     "id": 29,
-    "name": "**__Bear Ears__**",
-    "description": "`Uncommon Profile Hat`",
+    "name": "Bear Ears",
+    "description": "Uncommon Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -333,8 +333,8 @@
     }
   },{
     "id": 30,
-    "name": "**__Cat Ears__**",
-    "description": "`Uncommon Profile Hat`",
+    "name": "Cat Ears",
+    "description": "Uncommon Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -344,8 +344,8 @@
     }
   },{
     "id": 31,
-    "name": "**__Elaine's Hat__**",
-    "description": "`Super Rare Profile Hat`",
+    "name": "Elaine's Hat",
+    "description": "Super Rare Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -355,8 +355,8 @@
     }
   },{
     "id": 32,
-    "name": "**__Jotaro's Hat__**",
-    "description": "`Rare Profile Hat`",
+    "name": "Jotaro's Hat",
+    "description": "Rare Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -366,8 +366,8 @@
     }
   },{
     "id": 33,
-    "name": "**__Luffy's Hat__**",
-    "description": "`Rare Profile Hat`",
+    "name": "Luffy's Hat",
+    "description": "Rare Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -377,8 +377,8 @@
     }
   },{
     "id": 34,
-    "name": "**__Megumin's Hat__**",
-    "description": "`Super Rare Profile Hat`",
+    "name": "Megumin's Hat",
+    "description": "Super Rare Profile Hat",
     "type": "hat",
     "deletable": true,
     "giftable": true,
@@ -389,8 +389,8 @@
  
   },{
     "id": 35,
-    "name": "**__Nezuko's Pattern__**",
-    "description": "`Rare Profile Pattern`",
+    "name": "Nezuko's Pattern",
+    "description": "Rare Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -400,7 +400,7 @@
     }
   },{
     "id": 36,
-    "name": "**__Sabito's Haori Pattern__**",
+    "name": "Sabito's Haori Pattern",
     "description": "Rare Profile Pattern",
     "type": "pattern",
     "deletable": true,
@@ -411,8 +411,8 @@
     }
   },{
     "id": 37,
-    "name": "**__Shinobu's Pattern__**",
-    "description": "`Rare Profile Pattern`",
+    "name": "Shinobu's Pattern",
+    "description": "Rare Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -422,8 +422,8 @@
     }
   },{
     "id": 38,
-    "name": "**__Tanjiro's Pattern__**",
-    "description": "`Rare Profile Pattern`",
+    "name": "Tanjiro's Pattern",
+    "description": "Rare Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -433,8 +433,8 @@
     }
   },{
     "id": 39,
-    "name": "**__Zenitsu's Pattern__**",
-    "description": "`Rare Profile Pattern`",
+    "name": "Zenitsu's Pattern",
+    "description": "Rare Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -444,8 +444,8 @@
     }
   },{
     "id": 40,
-    "name": "**__Akatzuki Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Akatzuki Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "deletable": true,
     "giftable": true,
@@ -455,8 +455,8 @@
     }
   },{
     "id": 41,
-    "name": "**__Saitama's Pattern__**",
-    "description": "`Uncommon Profile Pattern`",
+    "name": "Saitama's Pattern",
+    "description": "Uncommon Profile Pattern",
     "type": "pattern",
     "image": "https://i.imgur.com/H9W02iA.png",
     "deletable": true,
